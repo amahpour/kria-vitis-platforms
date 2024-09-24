@@ -1,0 +1,349 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'ISPpipeline'" level="0">
+<item name = "Date">Wed Sep  4 19:39:30 2024
+</item>
+<item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
+<item name = "Project">isppipeline.prj</item>
+<item name = "Solution">sol1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.30 ns, 3.239 ns, 0.89 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2084559, 2097981, 6.879 ms, 6.923 ms, 2084403, 2097967, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="entry_proc_U0">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="ISPpipeline_Block_entry1_proc_U0">ISPpipeline_Block_entry1_proc, 14, 14, 46.200 ns, 46.200 ns, 14, 14, no</column>
+<column name="AXIVideo2BayerMat_13_1080_1920_1_U0">AXIVideo2BayerMat_13_1080_1920_1_s, 6, 2084406, 19.800 ns, 6.879 ms, 6, 2084406, no</column>
+<column name="blackLevelCorrection_13_1080_1920_1_16_15_1_9_U0">blackLevelCorrection_13_1080_1920_1_16_15_1_9, 2073612, 2073612, 6.843 ms, 6.843 ms, 2073612, 2073612, no</column>
+<column name="gaincontrol_3_13_1080_1920_1_U0">gaincontrol_3_13_1080_1920_1_s, 2082241, 2082241, 6.871 ms, 6.871 ms, 2082241, 2082241, no</column>
+<column name="demosaicing_3_13_17_1080_1920_1_false_U0">demosaicing_3_13_17_1080_1920_1_false_s, 14646, 2097966, 48.332 us, 6.923 ms, 14646, 2097966, no</column>
+<column name="function_awb_17_17_1080_1920_1_U0">function_awb_17_17_1080_1920_1_s, 2077923, 2089150, 6.857 ms, 6.894 ms, 2077923, 2089150, no</column>
+<column name="colorcorrectionmatrix_0_17_17_1080_1920_1_2_U0">colorcorrectionmatrix_0_17_17_1080_1920_1_2_s, 2084402, 2084402, 6.879 ms, 6.879 ms, 2084402, 2084402, no</column>
+<column name="xf_QuatizationDithering_17_9_1080_1920_256_1024_1_U0">xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s, 2075532, 2075532, 6.849 ms, 6.849 ms, 2075532, 2075532, no</column>
+<column name="gammacorrection_9_9_1080_1920_1_U0">gammacorrection_9_9_1080_1920_1_s, 2081934, 2081934, 6.870 ms, 6.870 ms, 2081934, 2081934, no</column>
+<column name="ColorMat2AXIvideo_9_1080_1920_1_U0">ColorMat2AXIvideo_9_1080_1920_1_s, 1, 2079001, 3.300 ns, 6.861 ms, 1, 2079001, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 104, -</column>
+<column name="FIFO">-, -, 3069, 2062, -</column>
+<column name="Instance">26, 34, 10807, 14425, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 189, -</column>
+<column name="Register">-, -, 21, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">9, 2, 5, 14, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="AXIVideo2BayerMat_13_1080_1920_1_U0">AXIVideo2BayerMat_13_1080_1920_1_s, 0, 0, 115, 457, 0</column>
+<column name="ColorMat2AXIvideo_9_1080_1920_1_U0">ColorMat2AXIvideo_9_1080_1920_1_s, 0, 0, 59, 228, 0</column>
+<column name="ISPpipeline_Block_entry1_proc_U0">ISPpipeline_Block_entry1_proc, 0, 3, 455, 375, 0</column>
+<column name="blackLevelCorrection_13_1080_1920_1_16_15_1_9_U0">blackLevelCorrection_13_1080_1920_1_16_15_1_9, 0, 2, 150, 264, 0</column>
+<column name="colorcorrectionmatrix_0_17_17_1080_1920_1_2_U0">colorcorrectionmatrix_0_17_17_1080_1920_1_2_s, 0, 9, 896, 891, 0</column>
+<column name="demosaicing_3_13_17_1080_1920_1_false_U0">demosaicing_3_13_17_1080_1920_1_false_s, 8, 0, 2137, 3151, 0</column>
+<column name="entry_proc_U0">entry_proc, 0, 0, 2, 29, 0</column>
+<column name="function_awb_17_17_1080_1920_1_U0">function_awb_17_17_1080_1920_1_s, 12, 17, 5719, 6907, 0</column>
+<column name="gaincontrol_3_13_1080_1920_1_U0">gaincontrol_3_13_1080_1920_1_s, 0, 2, 252, 322, 0</column>
+<column name="gammacorrection_9_9_1080_1920_1_U0">gammacorrection_9_9_1080_1920_1_s, 3, 0, 270, 526, 0</column>
+<column name="xf_QuatizationDithering_17_9_1080_1920_256_1024_1_U0">xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s, 3, 1, 752, 1275, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="aecin_cols_channel_U">0, 99, 0, -, 9, 11, 99</column>
+<column name="aecin_data_U">0, 99, 0, -, 2, 24, 48</column>
+<column name="aecin_rows_channel_U">0, 99, 0, -, 9, 11, 99</column>
+<column name="bgain_c_U">0, 99, 0, -, 5, 16, 80</column>
+<column name="demosaic_out_cols_channel_U">0, 99, 0, -, 6, 11, 66</column>
+<column name="demosaic_out_data_U">0, 99, 0, -, 2, 30, 60</column>
+<column name="demosaic_out_rows_channel_U">0, 99, 0, -, 6, 11, 66</column>
+<column name="gain_out_cols_channel_U">0, 99, 0, -, 5, 11, 55</column>
+<column name="gain_out_data_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="gain_out_rows_channel_U">0, 99, 0, -, 5, 11, 55</column>
+<column name="imgInput1_cols_c22_channel_U">0, 99, 0, -, 2, 11, 22</column>
+<column name="imgInput1_cols_c_U">0, 99, 0, -, 2, 11, 22</column>
+<column name="imgInput1_data_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="imgInput1_rows_c21_channel_U">0, 99, 0, -, 2, 11, 22</column>
+<column name="imgInput1_rows_c_U">0, 99, 0, -, 2, 11, 22</column>
+<column name="imgInput2_cols_channel_U">0, 99, 0, -, 4, 11, 44</column>
+<column name="imgInput2_data_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="imgInput2_rows_channel_U">0, 99, 0, -, 4, 11, 44</column>
+<column name="lsc_out_cols_channel_U">0, 99, 0, -, 8, 11, 88</column>
+<column name="lsc_out_data_U">0, 99, 0, -, 2, 30, 60</column>
+<column name="lsc_out_rows_channel_U">0, 99, 0, -, 8, 11, 88</column>
+<column name="ltm_in_cols_c24_channel_U">0, 99, 0, -, 6, 11, 66</column>
+<column name="ltm_in_cols_c_U">0, 99, 0, -, 2, 11, 22</column>
+<column name="ltm_in_data_U">0, 99, 0, -, 2, 30, 60</column>
+<column name="ltm_in_rows_c23_channel_U">0, 99, 0, -, 6, 11, 66</column>
+<column name="ltm_in_rows_c_U">0, 99, 0, -, 2, 11, 22</column>
+<column name="p_dst_cols_channel_U">0, 99, 0, -, 10, 11, 110</column>
+<column name="p_dst_data_U">0, 99, 0, -, 2, 24, 48</column>
+<column name="p_dst_rows_channel_U">0, 99, 0, -, 10, 11, 110</column>
+<column name="rgain_c_U">0, 99, 0, -, 5, 16, 80</column>
+<column name="thresh_loc_channel_U">0, 99, 0, -, 6, 32, 192</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="AXIVideo2BayerMat_13_1080_1920_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ColorMat2AXIvideo_9_1080_1920_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ISPpipeline_Block_entry1_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="ISPpipeline_Block_entry1_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_aecin_cols_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_aecin_rows_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_demosaic_out_cols_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_demosaic_out_rows_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_gain_out_cols_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_gain_out_rows_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_imgInput1_cols_c22_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_imgInput1_rows_c21_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_imgInput2_cols_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_imgInput2_rows_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lsc_out_cols_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lsc_out_rows_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_ltm_in_cols_c24_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_ltm_in_rows_c23_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_p_dst_cols_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_p_dst_rows_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_thresh_loc_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_continue">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="demosaicing_3_13_17_1080_1920_1_false_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="entry_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="function_awb_17_17_1080_1920_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="gaincontrol_3_13_1080_1920_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="gammacorrection_9_9_1080_1920_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="xf_QuatizationDithering_17_9_1080_1920_256_1024_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ISPpipeline_Block_entry1_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_aecin_cols_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_aecin_rows_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_demosaic_out_cols_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_demosaic_out_rows_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_gain_out_cols_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_gain_out_rows_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_imgInput1_cols_c22_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_imgInput1_rows_c21_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_imgInput2_cols_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_imgInput2_rows_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lsc_out_cols_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lsc_out_rows_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_ltm_in_cols_c24_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_ltm_in_rows_c23_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_p_dst_cols_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_p_dst_rows_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_thresh_loc_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_entry_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_function_awb_17_17_1080_1920_1_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_gammacorrection_9_9_1080_1920_1_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_ISPpipeline_Block_entry1_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_aecin_cols_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_aecin_rows_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_demosaic_out_cols_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_demosaic_out_rows_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_gain_out_cols_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_gain_out_rows_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_imgInput1_cols_c22_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_imgInput1_rows_c21_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_imgInput2_cols_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_imgInput2_rows_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lsc_out_cols_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lsc_out_rows_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_ltm_in_cols_c24_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_ltm_in_rows_c23_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_p_dst_cols_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_p_dst_rows_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_thresh_loc_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_entry_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_function_awb_17_17_1080_1920_1_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_gammacorrection_9_9_1080_1920_1_U0_ap_ready">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_ISPpipeline_Block_entry1_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_aecin_cols_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_aecin_rows_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_demosaic_out_cols_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_demosaic_out_rows_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_gain_out_cols_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_gain_out_rows_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_imgInput1_cols_c22_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_imgInput1_rows_c21_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_imgInput2_cols_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_imgInput2_rows_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lsc_out_cols_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lsc_out_rows_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_ltm_in_cols_c24_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_ltm_in_rows_c23_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_p_dst_cols_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_p_dst_rows_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_thresh_loc_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_entry_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_function_awb_17_17_1080_1920_1_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_gammacorrection_9_9_1080_1920_1_U0_ap_ready">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axis_video_TDATA">in, 16, axis, s_axis_video_V_data_V, pointer</column>
+<column name="s_axis_video_TKEEP">in, 2, axis, s_axis_video_V_keep_V, pointer</column>
+<column name="s_axis_video_TSTRB">in, 2, axis, s_axis_video_V_strb_V, pointer</column>
+<column name="s_axis_video_TUSER">in, 1, axis, s_axis_video_V_user_V, pointer</column>
+<column name="s_axis_video_TLAST">in, 1, axis, s_axis_video_V_last_V, pointer</column>
+<column name="s_axis_video_TID">in, 1, axis, s_axis_video_V_id_V, pointer</column>
+<column name="s_axis_video_TDEST">in, 1, axis, s_axis_video_V_dest_V, pointer</column>
+<column name="s_axis_video_TVALID">in, 1, axis, s_axis_video_V_dest_V, pointer</column>
+<column name="s_axis_video_TREADY">out, 1, axis, s_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TDATA">out, 24, axis, m_axis_video_V_data_V, pointer</column>
+<column name="m_axis_video_TKEEP">out, 3, axis, m_axis_video_V_keep_V, pointer</column>
+<column name="m_axis_video_TSTRB">out, 3, axis, m_axis_video_V_strb_V, pointer</column>
+<column name="m_axis_video_TUSER">out, 1, axis, m_axis_video_V_user_V, pointer</column>
+<column name="m_axis_video_TLAST">out, 1, axis, m_axis_video_V_last_V, pointer</column>
+<column name="m_axis_video_TID">out, 1, axis, m_axis_video_V_id_V, pointer</column>
+<column name="m_axis_video_TDEST">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TVALID">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TREADY">in, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="height">in, 11, ap_none, height, scalar</column>
+<column name="height_ap_vld">in, 1, ap_none, height, scalar</column>
+<column name="width">in, 11, ap_none, width, scalar</column>
+<column name="width_ap_vld">in, 1, ap_none, width, scalar</column>
+<column name="hist0_0_address0">out, 10, ap_memory, hist0_0, array</column>
+<column name="hist0_0_ce0">out, 1, ap_memory, hist0_0, array</column>
+<column name="hist0_0_d0">out, 32, ap_memory, hist0_0, array</column>
+<column name="hist0_0_q0">in, 32, ap_memory, hist0_0, array</column>
+<column name="hist0_0_we0">out, 1, ap_memory, hist0_0, array</column>
+<column name="hist0_0_address1">out, 10, ap_memory, hist0_0, array</column>
+<column name="hist0_0_ce1">out, 1, ap_memory, hist0_0, array</column>
+<column name="hist0_0_d1">out, 32, ap_memory, hist0_0, array</column>
+<column name="hist0_0_q1">in, 32, ap_memory, hist0_0, array</column>
+<column name="hist0_0_we1">out, 1, ap_memory, hist0_0, array</column>
+<column name="hist0_1_address0">out, 10, ap_memory, hist0_1, array</column>
+<column name="hist0_1_ce0">out, 1, ap_memory, hist0_1, array</column>
+<column name="hist0_1_d0">out, 32, ap_memory, hist0_1, array</column>
+<column name="hist0_1_q0">in, 32, ap_memory, hist0_1, array</column>
+<column name="hist0_1_we0">out, 1, ap_memory, hist0_1, array</column>
+<column name="hist0_1_address1">out, 10, ap_memory, hist0_1, array</column>
+<column name="hist0_1_ce1">out, 1, ap_memory, hist0_1, array</column>
+<column name="hist0_1_d1">out, 32, ap_memory, hist0_1, array</column>
+<column name="hist0_1_q1">in, 32, ap_memory, hist0_1, array</column>
+<column name="hist0_1_we1">out, 1, ap_memory, hist0_1, array</column>
+<column name="hist0_2_address0">out, 10, ap_memory, hist0_2, array</column>
+<column name="hist0_2_ce0">out, 1, ap_memory, hist0_2, array</column>
+<column name="hist0_2_d0">out, 32, ap_memory, hist0_2, array</column>
+<column name="hist0_2_q0">in, 32, ap_memory, hist0_2, array</column>
+<column name="hist0_2_we0">out, 1, ap_memory, hist0_2, array</column>
+<column name="hist0_2_address1">out, 10, ap_memory, hist0_2, array</column>
+<column name="hist0_2_ce1">out, 1, ap_memory, hist0_2, array</column>
+<column name="hist0_2_d1">out, 32, ap_memory, hist0_2, array</column>
+<column name="hist0_2_q1">in, 32, ap_memory, hist0_2, array</column>
+<column name="hist0_2_we1">out, 1, ap_memory, hist0_2, array</column>
+<column name="hist1_0_address0">out, 10, ap_memory, hist1_0, array</column>
+<column name="hist1_0_ce0">out, 1, ap_memory, hist1_0, array</column>
+<column name="hist1_0_d0">out, 32, ap_memory, hist1_0, array</column>
+<column name="hist1_0_q0">in, 32, ap_memory, hist1_0, array</column>
+<column name="hist1_0_we0">out, 1, ap_memory, hist1_0, array</column>
+<column name="hist1_0_address1">out, 10, ap_memory, hist1_0, array</column>
+<column name="hist1_0_ce1">out, 1, ap_memory, hist1_0, array</column>
+<column name="hist1_0_d1">out, 32, ap_memory, hist1_0, array</column>
+<column name="hist1_0_q1">in, 32, ap_memory, hist1_0, array</column>
+<column name="hist1_0_we1">out, 1, ap_memory, hist1_0, array</column>
+<column name="hist1_1_address0">out, 10, ap_memory, hist1_1, array</column>
+<column name="hist1_1_ce0">out, 1, ap_memory, hist1_1, array</column>
+<column name="hist1_1_d0">out, 32, ap_memory, hist1_1, array</column>
+<column name="hist1_1_q0">in, 32, ap_memory, hist1_1, array</column>
+<column name="hist1_1_we0">out, 1, ap_memory, hist1_1, array</column>
+<column name="hist1_1_address1">out, 10, ap_memory, hist1_1, array</column>
+<column name="hist1_1_ce1">out, 1, ap_memory, hist1_1, array</column>
+<column name="hist1_1_d1">out, 32, ap_memory, hist1_1, array</column>
+<column name="hist1_1_q1">in, 32, ap_memory, hist1_1, array</column>
+<column name="hist1_1_we1">out, 1, ap_memory, hist1_1, array</column>
+<column name="hist1_2_address0">out, 10, ap_memory, hist1_2, array</column>
+<column name="hist1_2_ce0">out, 1, ap_memory, hist1_2, array</column>
+<column name="hist1_2_d0">out, 32, ap_memory, hist1_2, array</column>
+<column name="hist1_2_q0">in, 32, ap_memory, hist1_2, array</column>
+<column name="hist1_2_we0">out, 1, ap_memory, hist1_2, array</column>
+<column name="hist1_2_address1">out, 10, ap_memory, hist1_2, array</column>
+<column name="hist1_2_ce1">out, 1, ap_memory, hist1_2, array</column>
+<column name="hist1_2_d1">out, 32, ap_memory, hist1_2, array</column>
+<column name="hist1_2_q1">in, 32, ap_memory, hist1_2, array</column>
+<column name="hist1_2_we1">out, 1, ap_memory, hist1_2, array</column>
+<column name="rgain">in, 16, ap_none, rgain, scalar</column>
+<column name="rgain_ap_vld">in, 1, ap_none, rgain, scalar</column>
+<column name="bgain">in, 16, ap_none, bgain, scalar</column>
+<column name="bgain_ap_vld">in, 1, ap_none, bgain, scalar</column>
+<column name="gamma_lut_address0">out, 10, ap_memory, gamma_lut, array</column>
+<column name="gamma_lut_ce0">out, 1, ap_memory, gamma_lut, array</column>
+<column name="gamma_lut_d0">out, 8, ap_memory, gamma_lut, array</column>
+<column name="gamma_lut_q0">in, 8, ap_memory, gamma_lut, array</column>
+<column name="gamma_lut_we0">out, 1, ap_memory, gamma_lut, array</column>
+<column name="mode_reg">in, 1, ap_none, mode_reg, scalar</column>
+<column name="mode_reg_ap_vld">in, 1, ap_none, mode_reg, scalar</column>
+<column name="pawb">in, 16, ap_none, pawb, scalar</column>
+<column name="pawb_ap_vld">in, 1, ap_none, pawb, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, ISPpipeline, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, ISPpipeline, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, ISPpipeline, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, ISPpipeline, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, ISPpipeline, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, ISPpipeline, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, ISPpipeline, return value</column>
+</table>
+</item>
+</section>
+</profile>

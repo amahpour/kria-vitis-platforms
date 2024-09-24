@@ -1,0 +1,180 @@
+
+
+================================================================
+== Vitis HLS Report for 'gaincontrol_3_13_1080_1920_1_Pipeline_ColLoop'
+================================================================
+* Date:           Wed Sep  4 19:39:19 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        isppipeline.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.30 ns|  1.739 ns|     0.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   |  min |  max |   Type  |
+    +---------+---------+----------+----------+------+------+---------+
+    |     1926|     1926|  6.356 us|  6.356 us|  1926|  1926|       no|
+    +---------+---------+----------+----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- ColLoop  |     1924|     1924|         6|          1|          1|  1920|       yes|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     2|       -|       -|    -|
+|Expression       |        -|     -|       0|      99|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      54|    -|
+|Register         |        -|     -|     203|      64|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     2|     203|     217|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|    ~0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    +------------------------------+--------------------------+-----------+
+    |           Instance           |          Module          | Expression|
+    +------------------------------+--------------------------+-----------+
+    |mul_mul_16ns_10ns_26_4_1_U70  |mul_mul_16ns_10ns_26_4_1  |    i0 * i1|
+    |mul_mul_16ns_10ns_26_4_1_U71  |mul_mul_16ns_10ns_26_4_1  |    i0 * i1|
+    +------------------------------+--------------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |j_V_6_fu_127_p2            |         +|   0|  0|  18|          11|           1|
+    |and_ln116_fu_221_p2        |       and|   0|  0|   2|           1|           1|
+    |icmp_ln47_1_fu_191_p2      |      icmp|   0|  0|  11|           9|           1|
+    |icmp_ln47_fu_159_p2        |      icmp|   0|  0|  11|           9|           1|
+    |icmp_ln90_fu_121_p2        |      icmp|   0|  0|  11|          11|          11|
+    |ap_block_pp0_stage0_01001  |        or|   0|  0|   2|           1|           1|
+    |or_ln112_fu_146_p2         |        or|   0|  0|   2|           1|           1|
+    |t_V_1_fu_206_p3            |    select|   0|  0|  10|           1|           2|
+    |t_V_2_fu_214_p3            |    select|   0|  0|  10|           1|          10|
+    |t_V_4_fu_225_p3            |    select|   0|  0|  10|           1|          10|
+    |t_V_fu_174_p3              |    select|   0|  0|  10|           1|           2|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  99|          48|          43|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_V_5   |   9|          2|   11|         22|
+    |gain_out_data240_blk_n   |   9|          2|    1|          2|
+    |imgInput2_data239_blk_n  |   9|          2|    1|          2|
+    |j_V_fu_64                |   9|          2|   11|         22|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   26|         52|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   1|   0|    1|          0|
+    |conv3_i11_i_i152_i_cast_reg_260   |  16|   0|   26|         10|
+    |conv3_i11_i_i214_i_cast_reg_265   |  16|   0|   26|         10|
+    |j_V_fu_64                         |  11|   0|   11|          0|
+    |t_V_4_reg_291                     |  10|   0|   10|          0|
+    |tmp_V_reg_280                     |  10|   0|   10|          0|
+    |trunc_ln1073_reg_274              |   1|   0|    1|          0|
+    |tmp_V_reg_280                     |  64|  32|   10|          0|
+    |trunc_ln1073_reg_274              |  64|  32|    1|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 203|  64|  106|         20|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|             RTL Ports            | Dir | Bits|  Protocol  |                    Source Object                   |    C Type    |
++----------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|ap_clk                            |   in|    1|  ap_ctrl_hs|  gaincontrol<3, 13, 1080, 1920, 1>_Pipeline_ColLoop|  return value|
+|ap_rst                            |   in|    1|  ap_ctrl_hs|  gaincontrol<3, 13, 1080, 1920, 1>_Pipeline_ColLoop|  return value|
+|ap_start                          |   in|    1|  ap_ctrl_hs|  gaincontrol<3, 13, 1080, 1920, 1>_Pipeline_ColLoop|  return value|
+|ap_done                           |  out|    1|  ap_ctrl_hs|  gaincontrol<3, 13, 1080, 1920, 1>_Pipeline_ColLoop|  return value|
+|ap_idle                           |  out|    1|  ap_ctrl_hs|  gaincontrol<3, 13, 1080, 1920, 1>_Pipeline_ColLoop|  return value|
+|ap_ready                          |  out|    1|  ap_ctrl_hs|  gaincontrol<3, 13, 1080, 1920, 1>_Pipeline_ColLoop|  return value|
+|imgInput2_data239_dout            |   in|   10|     ap_fifo|                                   imgInput2_data239|       pointer|
+|imgInput2_data239_num_data_valid  |   in|    2|     ap_fifo|                                   imgInput2_data239|       pointer|
+|imgInput2_data239_fifo_cap        |   in|    2|     ap_fifo|                                   imgInput2_data239|       pointer|
+|imgInput2_data239_empty_n         |   in|    1|     ap_fifo|                                   imgInput2_data239|       pointer|
+|imgInput2_data239_read            |  out|    1|     ap_fifo|                                   imgInput2_data239|       pointer|
+|gain_out_data240_din              |  out|   10|     ap_fifo|                                    gain_out_data240|       pointer|
+|gain_out_data240_num_data_valid   |   in|    2|     ap_fifo|                                    gain_out_data240|       pointer|
+|gain_out_data240_fifo_cap         |   in|    2|     ap_fifo|                                    gain_out_data240|       pointer|
+|gain_out_data240_full_n           |   in|    1|     ap_fifo|                                    gain_out_data240|       pointer|
+|gain_out_data240_write            |  out|    1|     ap_fifo|                                    gain_out_data240|       pointer|
+|p_read1                           |   in|   11|     ap_none|                                             p_read1|        scalar|
+|trunc_ln                          |   in|    1|     ap_none|                                            trunc_ln|        scalar|
+|conv3_i11_i_i214_i                |   in|   16|     ap_none|                                  conv3_i11_i_i214_i|        scalar|
+|conv3_i11_i_i152_i                |   in|   16|     ap_none|                                  conv3_i11_i_i152_i|        scalar|
++----------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+

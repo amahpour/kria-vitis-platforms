@@ -1,0 +1,362 @@
+<stg><name>AWBhistogram<17, 17, 1080, 1920, 1, 1, 1024></name>
+
+
+<trans_list>
+
+<trans id="10" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="11" op_0_bw="11" op_1_bw="11">
+<![CDATA[
+entry:2 %p_read13 = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %p_read1
+
+]]></Node>
+<StgValue><ssdm name="p_read13"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="23" bw="11" op_0_bw="11" op_1_bw="11">
+<![CDATA[
+entry:3 %p_read_31 = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %p_read
+
+]]></Node>
+<StgValue><ssdm name="p_read_31"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="11" op_3_bw="30" op_4_bw="30" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32">
+<![CDATA[
+entry:4 %call_ln622 = call void @AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>, i11 %p_read_31, i11 %p_read13, i30 %demosaic_out_data241, i30 %impop_data1, i32 %histogram_0, i32 %histogram_1, i32 %histogram_2, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6
+
+]]></Node>
+<StgValue><ssdm name="call_ln622"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="6" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %impop_data1, void @empty_36, i32 0, i32 0, void @empty_18, i32 0, i32 0, void @empty_18, void @empty_18, void @empty_18, i32 0, i32 0, i32 0, i32 0, void @empty_18, void @empty_18, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %demosaic_out_data241, void @empty_36, i32 0, i32 0, void @empty_18, i32 0, i32 0, void @empty_18, void @empty_18, void @empty_18, i32 0, i32 0, i32 0, i32 0, void @empty_18, void @empty_18, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="11" op_3_bw="30" op_4_bw="30" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32">
+<![CDATA[
+entry:4 %call_ln622 = call void @AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>, i11 %p_read_31, i11 %p_read13, i30 %demosaic_out_data241, i30 %impop_data1, i32 %histogram_0, i32 %histogram_1, i32 %histogram_2, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6
+
+]]></Node>
+<StgValue><ssdm name="call_ln622"/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="25" bw="0">
+<![CDATA[
+entry:5 %ret_ln624 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln624"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="11" name="p_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read"/></StgValue>
+</port>
+<port id="12" name="p_read1" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read1"/></StgValue>
+</port>
+<port id="13" name="demosaic_out_data241" dir="0" iftype="3">
+<core>NULL</core><StgValue><ssdm name="demosaic_out_data241"/></StgValue>
+</port>
+<port id="14" name="impop_data1" dir="1" iftype="3">
+<core>NULL</core><StgValue><ssdm name="impop_data1"/></StgValue>
+</port>
+<port id="15" name="histogram_0" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="histogram_0"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="16" name="histogram_1" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="histogram_1"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="17" name="histogram_2" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="histogram_2"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="18" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5"/></StgValue>
+</port>
+<port id="19" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2"/></StgValue>
+</port>
+<port id="20" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11"/></StgValue>
+</port>
+<port id="21" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8"/></StgValue>
+</port>
+<port id="22" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4"/></StgValue>
+</port>
+<port id="23" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1"/></StgValue>
+</port>
+<port id="24" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10"/></StgValue>
+</port>
+<port id="25" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7"/></StgValue>
+</port>
+<port id="26" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3"/></StgValue>
+</port>
+<port id="27" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float"/></StgValue>
+</port>
+<port id="28" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9"/></StgValue>
+</port>
+<port id="29" name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="31" from="_ssdm_op_Read.ap_auto.i11" to="p_read13" fromId="30" toId="3">
+</dataflow>
+<dataflow id="32" from="p_read1" to="p_read13" fromId="12" toId="3">
+</dataflow>
+<dataflow id="33" from="_ssdm_op_Read.ap_auto.i11" to="p_read_31" fromId="30" toId="4">
+</dataflow>
+<dataflow id="34" from="p_read" to="p_read_31" fromId="11" toId="4">
+</dataflow>
+<dataflow id="36" from="AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>" to="call_ln622" fromId="35" toId="5">
+</dataflow>
+<dataflow id="37" from="p_read_31" to="call_ln622" fromId="4" toId="5">
+</dataflow>
+<dataflow id="38" from="p_read13" to="call_ln622" fromId="3" toId="5">
+</dataflow>
+<dataflow id="39" from="demosaic_out_data241" to="call_ln622" fromId="13" toId="5">
+</dataflow>
+<dataflow id="40" from="impop_data1" to="call_ln622" fromId="14" toId="5">
+</dataflow>
+<dataflow id="41" from="histogram_0" to="call_ln622" fromId="15" toId="5">
+</dataflow>
+<dataflow id="42" from="histogram_1" to="call_ln622" fromId="16" toId="5">
+</dataflow>
+<dataflow id="43" from="histogram_2" to="call_ln622" fromId="17" toId="5">
+</dataflow>
+<dataflow id="44" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5" to="call_ln622" fromId="18" toId="5">
+</dataflow>
+<dataflow id="45" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2" to="call_ln622" fromId="19" toId="5">
+</dataflow>
+<dataflow id="46" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11" to="call_ln622" fromId="20" toId="5">
+</dataflow>
+<dataflow id="47" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8" to="call_ln622" fromId="21" toId="5">
+</dataflow>
+<dataflow id="48" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4" to="call_ln622" fromId="22" toId="5">
+</dataflow>
+<dataflow id="49" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1" to="call_ln622" fromId="23" toId="5">
+</dataflow>
+<dataflow id="50" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10" to="call_ln622" fromId="24" toId="5">
+</dataflow>
+<dataflow id="51" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7" to="call_ln622" fromId="25" toId="5">
+</dataflow>
+<dataflow id="52" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3" to="call_ln622" fromId="26" toId="5">
+</dataflow>
+<dataflow id="53" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float" to="call_ln622" fromId="27" toId="5">
+</dataflow>
+<dataflow id="54" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9" to="call_ln622" fromId="28" toId="5">
+</dataflow>
+<dataflow id="55" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6" to="call_ln622" fromId="29" toId="5">
+</dataflow>
+<dataflow id="57" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="56" toId="6">
+</dataflow>
+<dataflow id="58" from="impop_data1" to="specinterface_ln0" fromId="14" toId="6">
+</dataflow>
+<dataflow id="60" from="empty_36" to="specinterface_ln0" fromId="59" toId="6">
+</dataflow>
+<dataflow id="62" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="63" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="65" from="empty_18" to="specinterface_ln0" fromId="64" toId="6">
+</dataflow>
+<dataflow id="66" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="67" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="68" from="empty_18" to="specinterface_ln0" fromId="64" toId="6">
+</dataflow>
+<dataflow id="69" from="empty_18" to="specinterface_ln0" fromId="64" toId="6">
+</dataflow>
+<dataflow id="70" from="empty_18" to="specinterface_ln0" fromId="64" toId="6">
+</dataflow>
+<dataflow id="71" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="72" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="73" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="74" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="75" from="empty_18" to="specinterface_ln0" fromId="64" toId="6">
+</dataflow>
+<dataflow id="76" from="empty_18" to="specinterface_ln0" fromId="64" toId="6">
+</dataflow>
+<dataflow id="78" from="StgValue_77" to="specinterface_ln0" fromId="77" toId="6">
+</dataflow>
+<dataflow id="79" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="6">
+</dataflow>
+<dataflow id="80" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="56" toId="7">
+</dataflow>
+<dataflow id="81" from="demosaic_out_data241" to="specinterface_ln0" fromId="13" toId="7">
+</dataflow>
+<dataflow id="82" from="empty_36" to="specinterface_ln0" fromId="59" toId="7">
+</dataflow>
+<dataflow id="83" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="84" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="85" from="empty_18" to="specinterface_ln0" fromId="64" toId="7">
+</dataflow>
+<dataflow id="86" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="87" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="88" from="empty_18" to="specinterface_ln0" fromId="64" toId="7">
+</dataflow>
+<dataflow id="89" from="empty_18" to="specinterface_ln0" fromId="64" toId="7">
+</dataflow>
+<dataflow id="90" from="empty_18" to="specinterface_ln0" fromId="64" toId="7">
+</dataflow>
+<dataflow id="91" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="92" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="93" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="94" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="95" from="empty_18" to="specinterface_ln0" fromId="64" toId="7">
+</dataflow>
+<dataflow id="96" from="empty_18" to="specinterface_ln0" fromId="64" toId="7">
+</dataflow>
+<dataflow id="97" from="StgValue_77" to="specinterface_ln0" fromId="77" toId="7">
+</dataflow>
+<dataflow id="98" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="7">
+</dataflow>
+<dataflow id="99" from="AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>" to="call_ln622" fromId="35" toId="8">
+</dataflow>
+<dataflow id="100" from="p_read_31" to="call_ln622" fromId="4" toId="8">
+</dataflow>
+<dataflow id="101" from="p_read13" to="call_ln622" fromId="3" toId="8">
+</dataflow>
+<dataflow id="102" from="demosaic_out_data241" to="call_ln622" fromId="13" toId="8">
+</dataflow>
+<dataflow id="103" from="impop_data1" to="call_ln622" fromId="14" toId="8">
+</dataflow>
+<dataflow id="104" from="histogram_0" to="call_ln622" fromId="15" toId="8">
+</dataflow>
+<dataflow id="105" from="histogram_1" to="call_ln622" fromId="16" toId="8">
+</dataflow>
+<dataflow id="106" from="histogram_2" to="call_ln622" fromId="17" toId="8">
+</dataflow>
+<dataflow id="107" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5" to="call_ln622" fromId="18" toId="8">
+</dataflow>
+<dataflow id="108" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2" to="call_ln622" fromId="19" toId="8">
+</dataflow>
+<dataflow id="109" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11" to="call_ln622" fromId="20" toId="8">
+</dataflow>
+<dataflow id="110" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8" to="call_ln622" fromId="21" toId="8">
+</dataflow>
+<dataflow id="111" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4" to="call_ln622" fromId="22" toId="8">
+</dataflow>
+<dataflow id="112" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1" to="call_ln622" fromId="23" toId="8">
+</dataflow>
+<dataflow id="113" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10" to="call_ln622" fromId="24" toId="8">
+</dataflow>
+<dataflow id="114" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7" to="call_ln622" fromId="25" toId="8">
+</dataflow>
+<dataflow id="115" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3" to="call_ln622" fromId="26" toId="8">
+</dataflow>
+<dataflow id="116" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float" to="call_ln622" fromId="27" toId="8">
+</dataflow>
+<dataflow id="117" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9" to="call_ln622" fromId="28" toId="8">
+</dataflow>
+<dataflow id="118" from="void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6" to="call_ln622" fromId="29" toId="8">
+</dataflow>
+</dataflows>
+
+
+</stg>

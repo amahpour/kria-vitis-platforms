@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vitis HLS Report for 'rb_kernel_ap_uint_10_5_s'
+================================================================
+* Date:           Wed Sep  4 19:39:03 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        isppipeline.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.30 ns|  1.695 ns|     0.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        3|        3|  9.900 ns|  9.900 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_read817 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read8"   --->   Operation 5 'read' 'p_read817' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_read716 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read7"   --->   Operation 6 'read' 'p_read716' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_read615 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read6"   --->   Operation 7 'read' 'p_read615' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_read514 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read5"   --->   Operation 8 'read' 'p_read514' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_read413 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read4"   --->   Operation 9 'read' 'p_read413' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_read312 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read3"   --->   Operation 10 'read' 'p_read312' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_read211 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read2"   --->   Operation 11 'read' 'p_read211' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_read110 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read1"   --->   Operation 12 'read' 'p_read110' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_read_18 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_read"   --->   Operation 13 'read' 'p_read_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln232 = zext i10 %p_read_18"   --->   Operation 14 'zext' 'zext_ln232' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln232_13 = zext i10 %p_read312"   --->   Operation 15 'zext' 'zext_ln232_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.78ns)   --->   "%ret_V_36 = add i11 %zext_ln232_13, i11 %zext_ln232"   --->   Operation 16 'add' 'ret_V_36' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln232_14 = zext i11 %ret_V_36"   --->   Operation 17 'zext' 'zext_ln232_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln1541 = zext i10 %p_read514"   --->   Operation 18 'zext' 'zext_ln1541' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln1541_17 = zext i10 %p_read817"   --->   Operation 19 'zext' 'zext_ln1541_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.78ns)   --->   "%add_ln1541 = add i11 %zext_ln1541, i11 %zext_ln1541_17"   --->   Operation 20 'add' 'add_ln1541' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln1541_18 = zext i11 %add_ln1541"   --->   Operation 21 'zext' 'zext_ln1541_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.79ns)   --->   "%ret_V_37 = add i12 %zext_ln1541_18, i12 %zext_ln232_14"   --->   Operation 22 'add' 'ret_V_37' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln232_15 = zext i10 %p_read110"   --->   Operation 23 'zext' 'zext_ln232_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln232_16 = zext i10 %p_read211"   --->   Operation 24 'zext' 'zext_ln232_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.78ns)   --->   "%ret_V_38 = add i11 %zext_ln232_16, i11 %zext_ln232_15"   --->   Operation 25 'add' 'ret_V_38' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln232_17 = zext i11 %ret_V_38"   --->   Operation 26 'zext' 'zext_ln232_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln1541_19 = zext i10 %p_read615"   --->   Operation 27 'zext' 'zext_ln1541_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln1541_20 = zext i10 %p_read716"   --->   Operation 28 'zext' 'zext_ln1541_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.78ns)   --->   "%add_ln1541_11 = add i11 %zext_ln1541_19, i11 %zext_ln1541_20"   --->   Operation 29 'add' 'add_ln1541_11' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln1541_21 = zext i11 %add_ln1541_11"   --->   Operation 30 'zext' 'zext_ln1541_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.79ns)   --->   "%ret_V = add i12 %zext_ln1541_21, i12 %zext_ln232_17"   --->   Operation 31 'add' 'ret_V' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 1.66>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln74 = zext i12 %ret_V_37" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:74]   --->   Operation 32 'zext' 'zext_ln74' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i14 @_ssdm_op_BitConcatenate.i14.i12.i2, i12 %ret_V_37, i2 0" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:75]   --->   Operation 33 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln75 = zext i14 %shl_ln" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:75]   --->   Operation 34 'zext' 'zext_ln75' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.83ns)   --->   "%sub_ln75 = sub i15 %zext_ln75, i15 %zext_ln74" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:75]   --->   Operation 35 'sub' 'sub_ln75' <Predicate = true> <Delay = 0.83> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i14 @_ssdm_op_PartSelect.i14.i15.i32.i32, i15 %sub_ln75, i32 1, i32 14" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:75]   --->   Operation 36 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%sext_ln232 = sext i14 %trunc_ln"   --->   Operation 37 'sext' 'sext_ln232' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%shl_ln4 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i10.i3, i10 %p_read413, i3 0" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:78]   --->   Operation 38 'bitconcatenate' 'shl_ln4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln78_1 = zext i13 %shl_ln4" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:78]   --->   Operation 39 'zext' 'zext_ln78_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%shl_ln78_1 = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i10.i1, i10 %p_read413, i1 0" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:78]   --->   Operation 40 'bitconcatenate' 'shl_ln78_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln78_2 = zext i11 %shl_ln78_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:78]   --->   Operation 41 'zext' 'zext_ln78_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.82ns)   --->   "%t3 = sub i14 %zext_ln78_1, i14 %zext_ln78_2" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:78]   --->   Operation 42 'sub' 't3' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%sext_ln78 = sext i14 %t3" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:78]   --->   Operation 43 'sext' 'sext_ln78' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.83ns)   --->   "%sub_ln79 = sub i15 %sext_ln78, i15 %sext_ln232" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:79]   --->   Operation 44 'sub' 'sub_ln79' <Predicate = true> <Delay = 0.83> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 1.69>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%shl_ln3 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i12.i1, i12 %ret_V, i1 0" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:79]   --->   Operation 45 'bitconcatenate' 'shl_ln3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln78 = zext i13 %shl_ln3" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:78]   --->   Operation 46 'zext' 'zext_ln78' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%sext_ln80 = sext i15 %sub_ln79" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 47 'sext' 'sext_ln80' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.84ns)   --->   "%add_ln80 = add i16 %sext_ln80, i16 %zext_ln78" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 48 'add' 'add_ln80' <Predicate = true> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %add_ln80, i32 15" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 49 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.85ns)   --->   "%sub_ln80 = sub i16 0, i16 %add_ln80" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 50 'sub' 'sub_ln80' <Predicate = true> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln80_1 = partselect i13 @_ssdm_op_PartSelect.i13.i16.i32.i32, i16 %sub_ln80, i32 3, i32 15" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 51 'partselect' 'trunc_ln80_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln80_2 = partselect i13 @_ssdm_op_PartSelect.i13.i16.i32.i32, i16 %add_ln80, i32 3, i32 15" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 52 'partselect' 'trunc_ln80_2' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 1.35>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln80 = zext i13 %trunc_ln80_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 53 'zext' 'zext_ln80' <Predicate = (tmp)> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.82ns)   --->   "%sub_ln80_1 = sub i14 0, i14 %zext_ln80" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 54 'sub' 'sub_ln80_1' <Predicate = (tmp)> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln80_1 = zext i13 %trunc_ln80_2" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 55 'zext' 'zext_ln80_1' <Predicate = (!tmp)> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.23ns)   --->   "%res = select i1 %tmp, i14 %sub_ln80_1, i14 %zext_ln80_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80]   --->   Operation 56 'select' 'res' <Predicate = true> <Delay = 0.23> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.23> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%trunc_ln79 = trunc i14 %res" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:79]   --->   Operation 57 'trunc' 'trunc_ln79' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_44 = bitselect i1 @_ssdm_op_BitSelect.i1.i14.i32, i14 %res, i32 13" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:81]   --->   Operation 58 'bitselect' 'tmp_44' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] (0.30ns)   --->   "%select_ln81 = select i1 %tmp_44, i13 0, i13 %trunc_ln79" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:81]   --->   Operation 59 'select' 'select_ln81' <Predicate = true> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%ret_ln83 = ret i13 %select_ln81" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:83]   --->   Operation 60 'ret' 'ret_ln83' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.3ns, clock uncertainty: 0.891ns.
+
+ <State 1>: 1.58ns
+The critical path consists of the following:
+	wire read operation ('p_read817') on port 'p_read8' [10]  (0 ns)
+	'add' operation ('add_ln1541') [25]  (0.787 ns)
+	'add' operation ('ret.V') [27]  (0.798 ns)
+
+ <State 2>: 1.66ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln75', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:75) [31]  (0.831 ns)
+	'sub' operation ('sub_ln79', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:79) [51]  (0.831 ns)
+
+ <State 3>: 1.69ns
+The critical path consists of the following:
+	'add' operation ('add_ln80', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80) [53]  (0.842 ns)
+	'sub' operation ('sub_ln80', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80) [55]  (0.853 ns)
+
+ <State 4>: 1.36ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln80_1', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80) [58]  (0.82 ns)
+	'select' operation ('res', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:80) [61]  (0.232 ns)
+	'select' operation ('select_ln81', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:81) [64]  (0.303 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

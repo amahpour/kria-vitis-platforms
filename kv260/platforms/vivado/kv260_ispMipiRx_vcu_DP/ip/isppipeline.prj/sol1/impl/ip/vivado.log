@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Sep  4 19:39:54 2024
+# Process ID: 4818
+# Current directory: /home/amahpour/code/kria-vitis-platforms/kv260/platforms/vivado/kv260_ispMipiRx_rpiMipiRx_DP/ip/isp_single_kv260/isppipeline.prj/sol1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/amahpour/code/kria-vitis-platforms/kv260/platforms/vivado/kv260_ispMipiRx_rpiMipiRx_DP/ip/isp_single_kv260/isppipeline.prj/sol1/impl/ip/vivado.log
+# Journal file: /home/amahpour/code/kria-vitis-platforms/kv260/platforms/vivado/kv260_ispMipiRx_rpiMipiRx_DP/ip/isp_single_kv260/isppipeline.prj/sol1/impl/ip/vivado.jou
+# Running On: Linux-Server, OS: Linux, CPU Frequency: 2298.504 MHz, CPU Physical cores: 4, Host memory: 16756 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2505.074 ; gain = 0.023 ; free physical = 7911 ; free virtual = 14572
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'ISPPipeline_accel_fmul_32ns_32ns_32_8_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2543.062 ; gain = 37.988 ; free physical = 7815 ; free virtual = 14535
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ISPPipeline_accel_fmul_32ns_32ns_32_8_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ISPPipeline_accel_fmul_32ns_32ns_32_8_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'ISPPipeline_accel_fpext_32ns_64_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ISPPipeline_accel_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ISPPipeline_accel_fpext_32ns_64_2_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'ISPPipeline_accel_uitofp_32ns_32_7_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ISPPipeline_accel_uitofp_32ns_32_7_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ISPPipeline_accel_uitofp_32ns_32_7_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  4 19:40:48 2024...

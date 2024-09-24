@@ -1,0 +1,1372 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1510] Running: create_clock -period 3.3 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.3ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 453.605 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp' ... 
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:711:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:716:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:721:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:726:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:731:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:736:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:741:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:746:9)
+WARNING: [HLS 207-5527] 'factor' in '#pragma HLS array_reshape' is ignored (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_video_mem.hpp:759:47)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:463:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:464:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:245:9)
+WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:250:9)
+WARNING: [HLS 207-5529] extra token before variable expression is ignored (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:411:33)
+WARNING: [HLS 207-5529] extra token before variable expression is ignored (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:412:33)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:359:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:225:9)
+WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file ../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp
+WARNING: [HLS 207-4074] variable templates are a C++14 extension (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:97:45)
+WARNING: [HLS 207-4074] variable templates are a C++14 extension (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:107:23)
+WARNING: [HLS 207-5292] unused parameter 'src' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:517:30)
+WARNING: [HLS 207-5292] unused parameter '_data' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:528:30)
+WARNING: [HLS 207-5292] unused parameter 'index' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:541:14)
+WARNING: [HLS 207-5292] unused parameter 'index' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:552:20)
+WARNING: [HLS 207-5292] unused parameter 'dst' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:785:101)
+WARNING: [HLS 207-5292] unused parameter 'stride' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:1043:41)
+WARNING: [HLS 207-5292] unused parameter 'index' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:1232:102)
+WARNING: [HLS 207-5292] unused parameter 'stride' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:1294:41)
+WARNING: [HLS 207-5292] unused parameter 'index' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:1538:34)
+WARNING: [HLS 207-5292] unused parameter 'in_val' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:39:23)
+WARNING: [HLS 207-5292] unused parameter 'in_val' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:36:22)
+WARNING: [HLS 207-5292] unused parameter 'thresh' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:71:32)
+WARNING: [HLS 207-5292] unused parameter 'outputMin' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:272:35)
+WARNING: [HLS 207-5292] unused parameter 'outputMax' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:273:35)
+WARNING: [HLS 207-5292] unused parameter 'p' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:415:31)
+WARNING: [HLS 207-5292] unused parameter 'outputMin' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:418:31)
+WARNING: [HLS 207-5292] unused parameter 'outputMax' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:31)
+WARNING: [HLS 207-5292] unused parameter 'in_val' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:33:18)
+WARNING: [HLS 207-5292] unused parameter 'in_val' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_lensshadingcorrection.hpp:29:22)
+WARNING: [HLS 207-5292] unused parameter 'in_val' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:87:22)
+WARNING: [HLS 207-5292] unused parameter 'in_val' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:30:21)
+WARNING: [HLS 207-4615] the argument to '__builtin_assume' has side effects that will be discarded (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_bgr2hsv.hpp:147:43)
+WARNING: [HLS 207-4615] the argument to '__builtin_assume' has side effects that will be discarded (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_bgr2hsv.hpp:148:43)
+WARNING: [HLS 207-4615] the argument to '__builtin_assume' has side effects that will be discarded (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_bgr2hsv.hpp:149:46)
+WARNING: [HLS 207-4615] the argument to '__builtin_assume' has side effects that will be discarded (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_bgr2hsv.hpp:150:46)
+WARNING: [HLS 207-5292] unused parameter 'in_val' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_aec.hpp:32:22)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 54.47 seconds. CPU system time: 2.07 seconds. Elapsed time: 61.74 seconds; current allocated memory: 484.516 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<13, 1080, 1920, 1, 2>::Mat(int, int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:670:0)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<17, 1080, 1920, 1, 2>::Mat(int, int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:670:0)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<9, 1080, 1920, 1, 2>::Mat(int, int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:670:0)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<1, 1080, 1920, 1, 2>::Mat(int, int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:670:0)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<1, 1080, 1920, 1, 2>::init(int, int, bool)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:605:0)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<9, 1080, 1920, 1, 2>::init(int, int, bool)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:605:0)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<17, 1080, 1920, 1, 2>::init(int, int, bool)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:605:0)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<13, 1080, 1920, 1, 2>::init(int, int, bool)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:605:0)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<13, 1080, 1920, 1, 2>::init(int, int, bool)' into 'xf::cv::Mat<13, 1080, 1920, 1, 2>::Mat(int, int)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:675:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<17, 1080, 1920, 1, 2>::init(int, int, bool)' into 'xf::cv::Mat<17, 1080, 1920, 1, 2>::Mat(int, int)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:675:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<9, 1080, 1920, 1, 2>::init(int, int, bool)' into 'xf::cv::Mat<9, 1080, 1920, 1, 2>::Mat(int, int)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:675:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<1, 1080, 1920, 1, 2>::init(int, int, bool)' into 'xf::cv::Mat<1, 1080, 1920, 1, 2>::Mat(int, int)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:675:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<17, 1080, 1920, 1, 2>::Mat(int, int)' into 'void fifo_awb<17, 17, 1080, 1920, 1>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:217:46)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<13, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:346:46)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<13, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:347:49)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<13, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:348:49)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<13, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:349:49)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<17, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:350:49)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<17, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:351:49)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<17, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:352:49)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<17, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:353:49)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<9, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:354:48)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<9, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:355:48)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<1, 1080, 1920, 1, 2>::Mat(int, int)' into 'ISPpipeline(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, unsigned short, unsigned short, unsigned char*, unsigned char, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:356:49)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_147_1' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:147:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_148_2' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:148:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_83_4' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:83:30)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:181:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_185_6' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:185:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_190_7' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:190:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_115_2' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:115:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_119_3' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:119:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_254_21' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:254:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_390_5' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:390:31)
+INFO: [HLS 214-291] Loop 'MERGE_HIST_CH_UNROLL' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:589:9)
+INFO: [HLS 214-291] Loop 'MERGE_HIST_NPPC_UNROLL' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:597:13)
+INFO: [HLS 214-291] Loop 'PLANES_LOOP' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:530:13)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_478_1' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:478:20)
+INFO: [HLS 214-291] Loop 'INITIALIZE' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:451:9)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_322_2' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:322:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_358_3' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:358:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_363_4' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:363:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_364_5' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:364:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_365_6' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:365:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_392_8' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:392:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_381_7' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:381:35)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:410:49)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_412_9' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:412:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_429_10' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:429:32)
+INFO: [HLS 214-291] Loop 'ProcLoop' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:97:13)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_100_2' is marked as complete unroll implied by the pipeline pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:100:27)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:147:31) in function 'ColorMat2AXIvideo<9, 1080, 1920, 1>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:100:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_148_2' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:148:35) in function 'ColorMat2AXIvideo<9, 1080, 1920, 1>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:100:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_83_4' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:83:30) in function 'xf::cv::xFGAMMAKernel<9, 1080, 1920, 3, 15, 1, 9, 9, 1920>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:40:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:181:34) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:181:34) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_185_6' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:185:20) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_190_7' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:190:20) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_150_4' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:150:20) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_154_5' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:154:20) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_115_2' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:115:20) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_3' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:119:20) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_254_21' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:254:32) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:130:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_390_5' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:390:31) in function 'xf::cv::AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:273:0)
+INFO: [HLS 214-186] Unrolling loop 'MERGE_HIST_CH_UNROLL' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:589:9) in function 'xf::cv::AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:0)
+INFO: [HLS 214-186] Unrolling loop 'MERGE_HIST_NPPC_UNROLL' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:597:13) in function 'xf::cv::AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:0)
+INFO: [HLS 214-186] Unrolling loop 'END_HIST_LOOP' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:568:5) in function 'xf::cv::AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:0)
+WARNING: [HLS 214-327] Dependence pragma in loop 'PLANES_LOOP' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:530:13) is removed because the loop is unrolled completely (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:532:9)
+WARNING: [HLS 214-327] Dependence pragma in loop 'PLANES_LOOP' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:530:13) is removed because the loop is unrolled completely (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:533:9)
+INFO: [HLS 214-186] Unrolling loop 'PLANES_LOOP' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:530:13) in function 'xf::cv::AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_478_1' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:478:20) in function 'xf::cv::AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:0)
+INFO: [HLS 214-186] Unrolling loop 'INITIALIZE' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:451:9) in function 'xf::cv::AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_322_2' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:322:20) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 3 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'Datafill' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:330:9) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 2 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_358_3' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:358:31) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_363_4' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:363:31) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 5 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_364_5' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:364:35) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_365_6' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:365:39) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 4 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_392_8' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:392:35) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_381_7' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:381:35) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:410:49) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_412_9' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:412:31) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_429_10' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:429:32) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-186] Unrolling loop 'ProcLoop' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:97:13) in function 'xf::cv::gaincontrolkernel<3, 13, 1080, 1920, 1, 1, 17, 17, 3, 3, 1920>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:78:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_100_2' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:100:27) in function 'xf::cv::blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>' completely with a factor of 1 (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:71:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<13, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<10>)' into 'void AXIVideo2BayerMat<13, 1080, 1920, 1>(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:34:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf::cv::Mat<13, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void xf::cv::blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, DataType<13, 1>::cname, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:71:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf_satcast_bl<ap_uint<10> >(int)' into 'void xf::cv::blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, DataType<13, 1>::cname, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:71:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<13, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<10>)' into 'void xf::cv::blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, DataType<13, 1>::cname, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:71:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf::cv::Mat<13, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void xf::cv::gaincontrolkernel<3, 13, 1080, 1920, 1, 1, 17, 17, 3, 3, 1920>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, unsigned short, unsigned short, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:78:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf_satcast_gain<ap_uint<10> >(int)' into 'void xf::cv::gaincontrolkernel<3, 13, 1080, 1920, 1, 1, 17, 17, 3, 3, 1920>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, unsigned short, unsigned short, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:78:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<13, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<10>)' into 'void xf::cv::gaincontrolkernel<3, 13, 1080, 1920, 1, 1, 17, 17, 3, 3, 1920>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, unsigned short, unsigned short, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:78:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::gaincontrolkernel<3, 13, 1080, 1920, 1, 1, 17, 17, 3, 3, 1920>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, unsigned short, unsigned short, unsigned short, unsigned short)' into 'void xf::cv::gaincontrol<3, 13, 1080, 1920, 1>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:176:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf::cv::Mat<13, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Core_Process<3, 13, 1, 17, 5>(DataType<13, 1>::uname (*) [5], int&, int&, int&, int, int, int)' into 'void xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf::cv::xf_satcast<10>(int)' into 'void xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<17, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<30>)' into 'void xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:221:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<30> xf::cv::Mat<17, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void xf::cv::AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned int (*) [1024], float, float, float, float, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<17, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<30>)' into 'void xf::cv::AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned int (*) [1024], float, float, float, float, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:419:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<30> xf::cv::Mat<17, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void xf::cv::AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned int (*) [1024], float, float, float, float, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:273:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf_satcast_awb<ap_uint<10> >(int)' into 'void xf::cv::AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned int (*) [1024], float, float, float, float, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:273:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<17, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<30>)' into 'void xf::cv::AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned int (*) [1024], float, float, float, float, float)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:273:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<30> xf::cv::Mat<17, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void fifo_copy<17, 17, 1080, 1920, 1>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:177:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<17, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<30>)' into 'void fifo_copy<17, 17, 1080, 1920, 1>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:177:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<30> xf::cv::Mat<17, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, ap_uint<8>, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:130:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf_satcast_ccm<ap_uint<10> >(int)' into 'void xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, ap_uint<8>, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:130:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<17, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<30>)' into 'void xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, ap_uint<8>, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:130:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<30> xf::cv::Mat<17, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<9, 1080, 1920, 1, 2>&)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<9, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<24>)' into 'void xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<9, 1080, 1920, 1, 2>&)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:46:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<24> xf::cv::Mat<9, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void xf::cv::xFGAMMAKernel<9, 1080, 1920, 3, 15, 1, 9, 9, 1920>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, xf::cv::Mat<9, 1080, 1920, 1, 2>&, unsigned char*, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:40:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<9, 1080, 1920, 1, 2>::write<2, (void*)0>(int, ap_uint<24>)' into 'void xf::cv::xFGAMMAKernel<9, 1080, 1920, 3, 15, 1, 9, 9, 1920>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, xf::cv::Mat<9, 1080, 1920, 1, 2>&, unsigned char*, unsigned short, unsigned short)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:40:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::xFGAMMAKernel<9, 1080, 1920, 3, 15, 1, 9, 9, 1920>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, xf::cv::Mat<9, 1080, 1920, 1, 2>&, unsigned char*, unsigned short, unsigned short)' into 'void xf::cv::gammacorrection<9, 9, 1080, 1920, 1>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, xf::cv::Mat<9, 1080, 1920, 1, 2>&, unsigned char*)' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:101:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<24> xf::cv::Mat<9, 1080, 1920, 1, 2>::read<2, (void*)0>(int)' into 'void ColorMat2AXIvideo<9, 1080, 1920, 1>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&)' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:100:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN2xf2cv18AWBhistogramkernelILi17ELi17ELi1080ELi1920ELi1ELi21ELi1ELi1024EEEvRNS0_3MatIXT_EXT1_EXT2_EXT3_ELi2EEES4_PAT6__jfffffE4acc1': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:490:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN2xf2cv18AWBhistogramkernelILi17ELi17ELi1080ELi1920ELi1ELi21ELi1ELi1024EEEvRNS0_3MatIXT_EXT1_EXT2_EXT3_ELi2EEES4_PAT6__jfffffE3acc': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:489:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN2xf2cv18AWBhistogramkernelILi17ELi17ELi1080ELi1920ELi1ELi21ELi1ELi1024EEEvRNS0_3MatIXT_EXT1_EXT2_EXT3_ELi2EEES4_PAT6__jfffffE4old1': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:488:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN2xf2cv18AWBhistogramkernelILi17ELi17ELi1080ELi1920ELi1ELi21ELi1ELi1024EEEvRNS0_3MatIXT_EXT1_EXT2_EXT3_ELi2EEES4_PAT6__jfffffE3old': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:487:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9hist1_awb': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:22:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9hist0_awb': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:21:0)
+INFO: [HLS 214-248] Applying array_partition to 'linebuffer': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:242:38)
+INFO: [HLS 214-248] Applying array_partition to 'imgblock': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:254:42)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_hist': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:460:17)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_hist1': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:461:17)
+INFO: [HLS 214-248] Applying array_partition to 'minValue': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:288:34)
+INFO: [HLS 214-248] Applying array_partition to 'maxValue': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:289:34)
+INFO: [HLS 214-248] Applying array_partition to 'offset_buffer': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:104:25)
+INFO: [HLS 214-248] Applying array_partition to 'lut_p.i': Complete partitioning on dimension 1. (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:45:19)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+WARNING: [HLS 214-203] Replacing invalid offset value '70' with '32' for s_axilite port 'mode_reg'. (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:400:85)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<16>s.i16' into 'void AXIVideo2BayerMat<13, 1080, 1920, 1>(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&) (.467.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'void AXIVideo2BayerMat<13, 1080, 1920, 1>(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&) (.467.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<2>s.i2' into 'void AXIVideo2BayerMat<13, 1080, 1920, 1>(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&) (.467.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i10.s_struct.ap_uint<10>s' into 'void AXIVideo2BayerMat<13, 1080, 1920, 1>(hls::stream<hls::axis<ap_uint<16>, 1ul, 1ul, 1ul>, 0>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&) (.467.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i10.s_struct.ap_uint<10>s' into 'void xf::cv::blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, DataType<13, 1>::cname, float) (.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i10.s_struct.ap_uint<10>s' into 'void xf::cv::gaincontrol<3, 13, 1080, 1920, 1>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<13, 1080, 1920, 1, 2>&, unsigned short, unsigned short) (.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i30.s_struct.ap_uint<30>s' into 'void xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>(xf::cv::Mat<13, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&) (.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i30.s_struct.ap_uint<30>s' into 'void xf::cv::AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, unsigned int (*) [1024], float, float, float, float, float) (.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i30.s_struct.ap_uint<30>s' into 'void xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<17, 1080, 1920, 1, 2>&, ap_uint<8>, unsigned short, unsigned short) (.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint<24>s' into 'void xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>(xf::cv::Mat<17, 1080, 1920, 1, 2>&, xf::cv::Mat<9, 1080, 1920, 1, 2>&) (.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint<24>s' into 'void xf::cv::gammacorrection<9, 9, 1080, 1920, 1>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, xf::cv::Mat<9, 1080, 1920, 1, 2>&, unsigned char*) (.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint<24>s' into 'void ColorMat2AXIvideo<9, 1080, 1920, 1>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&) (.449.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'void ColorMat2AXIvideo<9, 1080, 1920, 1>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&) (.449.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i3.s_struct.ap_uint<3>s' into 'void ColorMat2AXIvideo<9, 1080, 1920, 1>(xf::cv::Mat<9, 1080, 1920, 1, 2>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&) (.449.1)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 11.89 seconds. CPU system time: 1.04 seconds. Elapsed time: 14.73 seconds; current allocated memory: 486.906 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 486.906 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.55 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.32 seconds; current allocated memory: 552.781 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.74 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.81 seconds; current allocated memory: 629.137 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_136_1' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:136) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_145_3' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:145) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_154_5' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:154) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_163_7' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:163) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_172_9' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:172) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_181_11' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:181) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_190_13' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:190) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_199_15' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:199) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_208_17' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:208) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_217_19' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:217) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_56_3' in function 'xf::cv::gammacorrection<9, 9, 1080, 1920, 1>' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_136_1' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:136) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_145_3' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:145) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_154_5' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:154) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_163_7' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:163) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_172_9' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:172) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_181_11' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:181) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_190_13' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:190) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_199_15' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:199) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_208_17' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:208) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_217_19' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:217) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' for pipelining.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1 for loop 'loop_col_mat2axi' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:129:9) in function 'ColorMat2AXIvideo<9, 1080, 1920, 1>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1 for loop 'loop_col_zxi2mat' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:71:9) in function 'AXIVideo2BayerMat<13, 1080, 1920, 1>'.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_137_2' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:137) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_146_4' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:146) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_155_6' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:155) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_164_8' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:164) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_173_10' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:173) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_182_12' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:182) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_191_14' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:191) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_200_16' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:200) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_209_18' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:209) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_218_20' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:218) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 'ccm_matrix.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:131) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'yuv_rgb_709_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'yuv_rgb_601_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'yuv_rgb_2020_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rgb_yuv_709_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rgb_yuv_601_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rgb_yuv_2020_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'full_to_16_235_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'full_from_16_235_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'bt709_bt2020_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'bt2020_bt709_arr_hls_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'fifo_awb<17, 17, 1080, 1920, 1>' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:217:1), detected/extracted 2 process function(s): 
+	 'xf::cv::AWBhistogram<17, 17, 1080, 1920, 1, 1, 1024>'
+	 'xf::cv::AWBNormalization<17, 17, 1080, 1920, 1, 1, 1024>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'ISPpipeline' (../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:346:1), detected/extracted 11 process function(s): 
+	 'entry_proc'
+	 'ISPpipeline_Block_entry1_proc'
+	 'AXIVideo2BayerMat<13, 1080, 1920, 1>'
+	 'xf::cv::blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>9'
+	 'xf::cv::gaincontrol<3, 13, 1080, 1920, 1>'
+	 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>'
+	 'function_awb<17, 17, 1080, 1920, 1>'
+	 'xf::cv::colorcorrectionmatrix<0, 17, 17, 1080, 1920, 1, 2>'
+	 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>'
+	 'xf::cv::gammacorrection<9, 9, 1080, 1920, 1>'
+	 'ColorMat2AXIvideo<9, 1080, 1920, 1>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:248:9) to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_colorcorrectionmatrix.hpp:245:9) in function 'xf::cv::xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:218:60) to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:216:25) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:218:60) to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:216:25) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:218:60) to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:248:17) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:92:9) to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gaincontrol.hpp:90:9) in function 'xf::cv::gaincontrol<3, 13, 1080, 1920, 1>'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:320:9) to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:318:9) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:287:9) to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:318:9) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:93:9) to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_black_level.hpp:91:22) in function 'xf::cv::blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>9'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:303:20) in function 'xf::cv::AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>'... converting 9 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:97:9)...9 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.68 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.83 seconds; current allocated memory: 726.766 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_ROW' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:165:16) in function 'xf::cv::xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>'.
+WARNING: [HLS 200-1946] Dependence pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:174:9) in loop 'LOOP_COL' may become invalid because the loop was flattened with the outer loop 'LOOP_ROW'.
+WARNING: [HLS 200-1946] Dependence pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:174:9) in loop 'LOOP_COL' may become invalid because the loop was flattened with the outer loop 'LOOP_ROW'.
+WARNING: [HLS 200-1946] Dependence pragma (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:174:9) in loop 'LOOP_COL' may become invalid because the loop was flattened with the outer loop 'LOOP_ROW'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_55_2' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:42:23) in function 'xf::cv::gammacorrection<9, 9, 1080, 1920, 1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LineBuffer' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:265:14) in function 'xf::cv::demosaicing<3, 13, 17, 1080, 1920, 1, false>'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_303_1' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:306:27) in function 'xf::cv::AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'offset_buffer.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:123:53)
+INFO: [HLS 200-472] Inferring partial write operation for 'offset_buffer.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:216:86)
+INFO: [HLS 200-472] Inferring partial write operation for 'lut_p' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_gammacorrection.hpp:57:42)
+INFO: [HLS 200-472] Inferring partial write operation for 'linebuffer.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:275:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'linebuffer.V.2' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:276:34)
+INFO: [HLS 200-472] Inferring partial write operation for 'linebuffer.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:389:42)
+INFO: [HLS 200-472] Inferring partial write operation for 'linebuffer.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'hist_0' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:455:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'tmp_hist.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:482:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'tmp_hist1.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:483:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'tmp_hist.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:551:38)
+INFO: [HLS 200-472] Inferring partial write operation for 'tmp_hist1.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:557:40)
+INFO: [HLS 200-472] Inferring partial write operation for 'tmp_hist.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'tmp_hist1.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576:33)
+INFO: [HLS 200-472] Inferring partial write operation for 'hist_0' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:604:25)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'offset_buffer.V.2' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:104).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'offset_buffer.V.1' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:104).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'offset_buffer.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:104).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuffer.V.3' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:242).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuffer.V.2' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:242).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuffer.V.1' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:242).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuffer.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:242).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'hist_2'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'hist_1'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'hist_0'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'minValue.V.4' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:288).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'minValue.V.3' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:288).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'minValue.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:288).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'hist_2'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'hist_1'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'hist_0'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'maxValue.V.4' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:289).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'maxValue.V.3' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:289).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'maxValue.V' (../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:289).
+WARNING: [HLS 200-1450] Process AWBhistogram<17, 17, 1080, 1920, 1, 1, 1024> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+WARNING: [HLS 200-1449] Process AWBNormalization<17, 17, 1080, 1920, 1, 1, 1024> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process AXIVideo2BayerMat<13, 1080, 1920, 1> has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+WARNING: [HLS 200-1449] Process function_awb<17, 17, 1080, 1920, 1> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1450] Process function_awb<17, 17, 1080, 1920, 1> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+WARNING: [HLS 200-1449] Process gammacorrection<9, 9, 1080, 1920, 1> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.06 seconds. CPU system time: 0.15 seconds. Elapsed time: 1.3 seconds; current allocated memory: 1.155 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'ISPPipeline_accel' ...
+WARNING: [SYN 201-103] Legalizing function name 'AXIVideo2BayerMat<13, 1080, 1920, 1>_Pipeline_loop_start_hunt' to 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_start_hunt'.
+WARNING: [SYN 201-103] Legalizing function name 'AXIVideo2BayerMat<13, 1080, 1920, 1>_Pipeline_loop_col_zxi2mat' to 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_col_zxi2mat'.
+WARNING: [SYN 201-103] Legalizing function name 'AXIVideo2BayerMat<13, 1080, 1920, 1>_Pipeline_loop_last_hunt' to 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_last_hunt'.
+WARNING: [SYN 201-103] Legalizing function name 'AXIVideo2BayerMat<13, 1080, 1920, 1>' to 'AXIVideo2BayerMat_13_1080_1920_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>9_Pipeline_VITIS_LOOP_91_1' to 'blackLevelCorrection_13_1080_1920_1_16_15_1_9_Pipeline_VITIS_LOOP_91_1'.
+WARNING: [SYN 201-103] Legalizing function name 'blackLevelCorrection<13, 1080, 1920, 1, 16, 15, 1>9' to 'blackLevelCorrection_13_1080_1920_1_16_15_1_9'.
+WARNING: [SYN 201-103] Legalizing function name 'gaincontrol<3, 13, 1080, 1920, 1>_Pipeline_ColLoop' to 'gaincontrol_3_13_1080_1920_1_Pipeline_ColLoop'.
+WARNING: [SYN 201-103] Legalizing function name 'gaincontrol<3, 13, 1080, 1920, 1>' to 'gaincontrol_3_13_1080_1920_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'demosaicing<3, 13, 17, 1080, 1920, 1, false>_Pipeline_Zero' to 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Zero'.
+WARNING: [SYN 201-103] Legalizing function name 'rb_kernel<ap_uint<10>, 5>' to 'rb_kernel_ap_uint_10_5_s'.
+WARNING: [SYN 201-103] Legalizing function name 'g_kernel<ap_uint<10>, 5>' to 'g_kernel_ap_uint_10_5_s'.
+WARNING: [SYN 201-103] Legalizing function name 'rgb_bgr_kernel<ap_uint<10>, 5>' to 'rgb_bgr_kernel_ap_uint_10_5_s'.
+WARNING: [SYN 201-103] Legalizing function name 'rgr_bgb_kernel<ap_uint<10>, 5>' to 'rgr_bgb_kernel_ap_uint_10_5_s'.
+WARNING: [SYN 201-103] Legalizing function name 'demosaicing<3, 13, 17, 1080, 1920, 1, false>_Pipeline_Col_Loop' to 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Col_Loop'.
+WARNING: [SYN 201-103] Legalizing function name 'demosaicing<3, 13, 17, 1080, 1920, 1, false>' to 'demosaicing_3_13_17_1080_1920_1_false_s'.
+WARNING: [SYN 201-103] Legalizing function name 'fifo_copy<17, 17, 1080, 1920, 1>_Pipeline_Col_Loop' to 'fifo_copy_17_17_1080_1920_1_Pipeline_Col_Loop'.
+WARNING: [SYN 201-103] Legalizing function name 'fifo_copy<17, 17, 1080, 1920, 1>' to 'fifo_copy_17_17_1080_1920_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_INITIALIZE_HIST' to 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_INITIALIZE_HIST'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_COL_LOOP' to 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_COL_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_MERGE_HIST_LOOP' to 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_MERGE_HIST_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>' to 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBhistogram<17, 17, 1080, 1920, 1, 1, 1024>' to 'AWBhistogram_17_17_1080_1920_1_1_1024_s'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>_Pipeline_Col_Loop1' to 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_Pipeline_Col_Loop1'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBNormalizationkernel<17, 17, 1080, 1920, 1, 21, 1, 1024, 2>' to 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_s'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBNormalization<17, 17, 1080, 1920, 1, 1, 1024>' to 'AWBNormalization_17_17_1080_1920_1_1_1024_s'.
+WARNING: [SYN 201-103] Legalizing function name 'fifo_awb<17, 17, 1080, 1920, 1>' to 'fifo_awb_17_17_1080_1920_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'function_awb<17, 17, 1080, 1920, 1>' to 'function_awb_17_17_1080_1920_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>_Pipeline_colLoop' to 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_Pipeline_colLoop'.
+WARNING: [SYN 201-103] Legalizing function name 'xfccmkernel<17, 1080, 1920, 21, 1, 11, 11, 1920, 2>' to 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_s'.
+WARNING: [SYN 201-103] Legalizing function name 'colorcorrectionmatrix<0, 17, 17, 1080, 1920, 1, 2>' to 'colorcorrectionmatrix_0_17_17_1080_1920_1_2_s'.
+WARNING: [SYN 201-103] Legalizing function name 'xf_QuatizationDithering<17, 9, 1080, 1920, 256, 1024, 1>' to 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'gammacorrection<9, 9, 1080, 1920, 1>_Pipeline_VITIS_LOOP_55_2_VITIS_LOOP_56_3' to 'gammacorrection_9_9_1080_1920_1_Pipeline_VITIS_LOOP_55_2_VITIS_LOOP_56_3'.
+WARNING: [SYN 201-103] Legalizing function name 'gammacorrection<9, 9, 1080, 1920, 1>_Pipeline_colLoop' to 'gammacorrection_9_9_1080_1920_1_Pipeline_colLoop'.
+WARNING: [SYN 201-103] Legalizing function name 'gammacorrection<9, 9, 1080, 1920, 1>' to 'gammacorrection_9_9_1080_1920_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'ColorMat2AXIvideo<9, 1080, 1920, 1>_Pipeline_loop_col_mat2axi' to 'ColorMat2AXIvideo_9_1080_1920_1_Pipeline_loop_col_mat2axi'.
+WARNING: [SYN 201-103] Legalizing function name 'ColorMat2AXIvideo<9, 1080, 1920, 1>' to 'ColorMat2AXIvideo_9_1080_1920_1_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.29 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.58 seconds; current allocated memory: 1.157 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 1.157 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ISPpipeline_Block_entry1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (3.239ns) exceeds the target (target clock period: 3.3ns, clock uncertainty: 0.891ns, effective delay budget: 2.409ns).
+WARNING: [HLS 200-1016] The critical path in module 'ISPpipeline_Block_entry1_proc' consists of the following:	wire read operation ('pawb_read', ../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:614) on port 'pawb' (../../../../../overlays/Vitis_Libraries/vision//L1/include/common/xf_structs.hpp:614) [4]  (0 ns)
+	'uitofp' operation ('conv', ../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:364) [8]  (3.24 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.157 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.157 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_start_hunt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_start_hunt'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop_start_hunt'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.158 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.158 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_col_zxi2mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_col_zxi2mat'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'loop_col_zxi2mat'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.158 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.158 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_last_hunt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_last_hunt'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop_last_hunt'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.159 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.159 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIVideo2BayerMat_13_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.159 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.159 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blackLevelCorrection_13_1080_1920_1_16_15_1_9_Pipeline_VITIS_LOOP_91_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=r_V) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_91_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'VITIS_LOOP_91_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.159 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.159 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'blackLevelCorrection_13_1080_1920_1_16_15_1_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=LoopCount) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.160 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.160 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'gaincontrol_3_13_1080_1920_1_Pipeline_ColLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=ret_V_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=ret_V) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'ColLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'ColLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.160 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.160 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'gaincontrol_3_13_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.160 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.160 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'demosaicing_Pipeline_LineBuffer_VITIS_LOOP_269_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LineBuffer_VITIS_LOOP_269_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'LineBuffer_VITIS_LOOP_269_1'
+WARNING: [HLS 200-871] Estimated clock period (2.55788ns) exceeds the target (target clock period: 3.3ns, clock uncertainty: 0.891ns, effective delay budget: 2.409ns).
+WARNING: [HLS 200-1016] The critical path in module 'demosaicing_Pipeline_LineBuffer_VITIS_LOOP_269_1' consists of the following:	'alloca' operation ('j') [8]  (0 ns)
+	'load' operation ('j_load', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:269) on local variable 'j' [28]  (0 ns)
+	'icmp' operation ('icmp_ln269', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:269) [32]  (0.944 ns)
+	'select' operation ('select_ln265', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:265) [33]  (0.389 ns)
+	'add' operation ('add_ln269', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:269) [55]  (0.798 ns)
+	'store' operation ('j_write_ln269', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:269) of variable 'add_ln269', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_demosaicing.hpp:269 on local variable 'j' [58]  (0.427 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.161 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.161 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Zero' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Zero'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'Zero'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.161 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.161 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rb_kernel_ap_uint_10_5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'rb_kernel<ap_uint<10>, 5>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 0, Final II = 1, Depth = 4, function 'rb_kernel<ap_uint<10>, 5>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.161 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.161 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'g_kernel_ap_uint_10_5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'g_kernel<ap_uint<10>, 5>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 0, Final II = 1, Depth = 3, function 'g_kernel<ap_uint<10>, 5>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.162 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.162 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rgb_bgr_kernel_ap_uint_10_5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'rgb_bgr_kernel<ap_uint<10>, 5>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 0, Final II = 1, Depth = 3, function 'rgb_bgr_kernel<ap_uint<10>, 5>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.162 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.162 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rgr_bgb_kernel_ap_uint_10_5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'rgr_bgb_kernel<ap_uint<10>, 5>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 0, Final II = 1, Depth = 3, function 'rgr_bgb_kernel<ap_uint<10>, 5>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1.163 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.163 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Col_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Col_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'Col_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 1.165 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.165 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'demosaicing_3_13_17_1080_1920_1_false_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (2.55788ns) exceeds the target (target clock period: 3.3ns, clock uncertainty: 0.891ns, effective delay budget: 2.409ns).
+WARNING: [HLS 200-1016] The critical path in module 'demosaicing_3_13_17_1080_1920_1_false_s' consists of the following:	'call' operation ('_ln0') to 'demosaicing_Pipeline_LineBuffer_VITIS_LOOP_269_1' [35]  (2.56 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.37 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.38 seconds; current allocated memory: 1.166 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'linebuffer_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'linebuffer_V_1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'linebuffer_V_2' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'linebuffer_V_3' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 1.166 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fifo_copy_17_17_1080_1920_1_Pipeline_Col_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Col_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'Col_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.43 seconds. CPU system time: 0 seconds. Elapsed time: 0.44 seconds; current allocated memory: 1.166 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.166 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fifo_copy_17_17_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.166 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.166 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_INITIALIZE_HIST' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'INITIALIZE_HIST'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'INITIALIZE_HIST'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.167 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.167 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBhistogramkernel_Pipeline_HIST_INITIALIZE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'HIST_INITIALIZE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'HIST_INITIALIZE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.167 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.167 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_COL_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COL_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 6, loop 'COL_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.168 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.168 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_MERGE_HIST_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MERGE_HIST_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'MERGE_HIST_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.169 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.169 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.169 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'tmp_hist_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'tmp_hist_V_1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'tmp_hist_V_2' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'tmp_hist1_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'tmp_hist1_V_1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'tmp_hist1_V_2' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.169 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBhistogram_17_17_1080_1920_1_1_1024_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.169 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.169 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_319_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_319_3'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation ('and_ln319', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:319)) in the first pipeline iteration (II = 1 cycles).
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation ('and_ln319', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:319)) in the first pipeline iteration (II = 2 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 5, loop 'VITIS_LOOP_319_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.171 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.171 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_329_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_329_4'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln1081')) in the first pipeline iteration (II = 1 cycles).
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln1081')) in the first pipeline iteration (II = 2 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 5, loop 'VITIS_LOOP_329_4'
+WARNING: [HLS 200-871] Estimated clock period (2.44912ns) exceeds the target (target clock period: 3.3ns, clock uncertainty: 0.891ns, effective delay budget: 2.409ns).
+WARNING: [HLS 200-1016] The critical path in module 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_329_4' consists of the following:	'load' operation ('n2.V') on local variable 'lhs.V' [36]  (0 ns)
+	'sub' operation ('ret.V') [48]  (1.02 ns)
+	'icmp' operation ('icmp_ln1081') [49]  (1.01 ns)
+	blocking operation 0.427 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.171 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.171 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_Pipeline_Col_Loop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_13) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Col_Loop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'Col_Loop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.172 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.172 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=r_V) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=total) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.43 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 1.173 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.74 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.74 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBNormalization_17_17_1080_1920_1_1_1024_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.47 seconds; current allocated memory: 1.173 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fifo_awb_17_17_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'function_awb_17_17_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.39 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.4 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_Pipeline_colLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_5) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'colLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'colLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.53 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.54 seconds; current allocated memory: 1.175 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.175 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.176 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.176 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'colorcorrectionmatrix_0_17_17_1080_1920_1_2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1.176 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.176 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xf_QuatizationDithering_Pipeline_VITIS_LOOP_110_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_110_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_110_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.176 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.176 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xf_QuatizationDithering_Pipeline_LOOP_ROW_LOOP_COL' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_ROW_LOOP_COL'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'LOOP_ROW_LOOP_COL'
+WARNING: [HLS 200-871] Estimated clock period (2.5865ns) exceeds the target (target clock period: 3.3ns, clock uncertainty: 0.891ns, effective delay budget: 2.409ns).
+WARNING: [HLS 200-1016] The critical path in module 'xf_QuatizationDithering_Pipeline_LOOP_ROW_LOOP_COL' consists of the following:	'load' operation ('col_index_1_load', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:170) on local variable 'col_index' [41]  (0 ns)
+	'icmp' operation ('icmp_ln170', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:170) [44]  (0.976 ns)
+	'select' operation ('select_ln165', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:165) [45]  (0.375 ns)
+	'add' operation ('col_index', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:170) [256]  (0.809 ns)
+	'store' operation ('col_index_1_write_ln170', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:170) of variable 'col_index', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_quantizationdithering.hpp:170 on local variable 'col_index' [267]  (0.427 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 1.178 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.178 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln165) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.31 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 1.178 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.178 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'gammacorrection_9_9_1080_1920_1_Pipeline_VITIS_LOOP_55_2_VITIS_LOOP_56_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_2_VITIS_LOOP_56_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_55_2_VITIS_LOOP_56_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 1.178 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.178 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'gammacorrection_9_9_1080_1920_1_Pipeline_colLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'colLoop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'colLoop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.179 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.179 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'gammacorrection_9_9_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.179 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.179 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ColorMat2AXIvideo_9_1080_1920_1_Pipeline_loop_col_mat2axi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_col_mat2axi'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'loop_col_mat2axi'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.180 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.180 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ColorMat2AXIvideo_9_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.180 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.180 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ISPpipeline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (3.239ns) exceeds the target (target clock period: 3.3ns, clock uncertainty: 0.891ns, effective delay budget: 2.409ns).
+WARNING: [HLS 200-1016] The critical path in module 'ISPpipeline' consists of the following:	wire read operation ('pawb_read') on port 'pawb' [40]  (0 ns)
+	'call' operation ('call_ret') to 'ISPpipeline_Block_entry1_proc' [94]  (3.24 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO ltm_in_cols_c24_channel (from ISPpipeline_Block_entry1_proc_U0 to function_awb_17_17_1080_1920_1_U0) to 6 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO ltm_in_rows_c23_channel (from ISPpipeline_Block_entry1_proc_U0 to function_awb_17_17_1080_1920_1_U0) to 6 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO thresh_loc_channel (from ISPpipeline_Block_entry1_proc_U0 to function_awb_17_17_1080_1920_1_U0) to 6 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO aecin_cols_channel (from ISPpipeline_Block_entry1_proc_U0 to gammacorrection_9_9_1080_1920_1_U0) to 9 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO aecin_rows_channel (from ISPpipeline_Block_entry1_proc_U0 to gammacorrection_9_9_1080_1920_1_U0) to 9 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO p_dst_cols_channel (from ISPpipeline_Block_entry1_proc_U0 to ColorMat2AXIvideo_9_1080_1920_1_U0) to 10 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO p_dst_rows_channel (from ISPpipeline_Block_entry1_proc_U0 to ColorMat2AXIvideo_9_1080_1920_1_U0) to 10 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO lsc_out_cols_channel (from ISPpipeline_Block_entry1_proc_U0 to xf_QuatizationDithering_17_9_1080_1920_256_1024_1_U0) to 8 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO lsc_out_rows_channel (from ISPpipeline_Block_entry1_proc_U0 to xf_QuatizationDithering_17_9_1080_1920_256_1024_1_U0) to 8 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO gain_out_cols_channel (from ISPpipeline_Block_entry1_proc_U0 to demosaicing_3_13_17_1080_1920_1_false_U0) to 5 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO gain_out_rows_channel (from ISPpipeline_Block_entry1_proc_U0 to demosaicing_3_13_17_1080_1920_1_false_U0) to 5 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO imgInput2_cols_channel (from ISPpipeline_Block_entry1_proc_U0 to gaincontrol_3_13_1080_1920_1_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO imgInput2_rows_channel (from ISPpipeline_Block_entry1_proc_U0 to gaincontrol_3_13_1080_1920_1_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO demosaic_out_rows_channel (from ISPpipeline_Block_entry1_proc_U0 to function_awb_17_17_1080_1920_1_U0) to 6 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO demosaic_out_cols_channel (from ISPpipeline_Block_entry1_proc_U0 to function_awb_17_17_1080_1920_1_U0) to 6 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 1.180 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.53 seconds. CPU system time: 0 seconds. Elapsed time: 0.53 seconds; current allocated memory: 1.181 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ISPPipeline_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (3.239ns) exceeds the target (target clock period: 3.3ns, clock uncertainty: 0.891ns, effective delay budget: 2.409ns).
+WARNING: [HLS 200-1016] The critical path in module 'ISPPipeline_accel' consists of the following:	'call' operation ('_ln430', ../../../../../overlays/Vitis_Libraries/vision//L1/examples/isppipeline/xf_isp_accel.cpp:430) to 'ISPpipeline' [93]  (3.24 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.34 seconds; current allocated memory: 1.181 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.47 seconds. CPU system time: 0 seconds. Elapsed time: 0.47 seconds; current allocated memory: 1.181 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.29 seconds; current allocated memory: 1.181 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ISPpipeline_Block_entry1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_8_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_7_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ISPpipeline_Block_entry1_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 1.183 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_start_hunt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_start_hunt'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.183 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_col_zxi2mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_col_zxi2mat' pipeline 'loop_col_zxi2mat' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_col_zxi2mat'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.184 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_last_hunt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIVideo2BayerMat_13_1080_1920_1_Pipeline_loop_last_hunt'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.185 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIVideo2BayerMat_13_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIVideo2BayerMat_13_1080_1920_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.186 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blackLevelCorrection_13_1080_1920_1_16_15_1_9_Pipeline_VITIS_LOOP_91_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'blackLevelCorrection_13_1080_1920_1_16_15_1_9_Pipeline_VITIS_LOOP_91_1' pipeline 'VITIS_LOOP_91_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_10ns_16ns_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blackLevelCorrection_13_1080_1920_1_16_15_1_9_Pipeline_VITIS_LOOP_91_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blackLevelCorrection_13_1080_1920_1_16_15_1_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_11ns_11ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blackLevelCorrection_13_1080_1920_1_16_15_1_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.188 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'gaincontrol_3_13_1080_1920_1_Pipeline_ColLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'gaincontrol_3_13_1080_1920_1_Pipeline_ColLoop' pipeline 'ColLoop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_10ns_26_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'gaincontrol_3_13_1080_1920_1_Pipeline_ColLoop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.189 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'gaincontrol_3_13_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'gaincontrol_3_13_1080_1920_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.190 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'demosaicing_Pipeline_LineBuffer_VITIS_LOOP_269_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'demosaicing_Pipeline_LineBuffer_VITIS_LOOP_269_1' pipeline 'LineBuffer_VITIS_LOOP_269_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'demosaicing_Pipeline_LineBuffer_VITIS_LOOP_269_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.191 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Zero' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Zero' pipeline 'Zero' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Zero'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.192 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rb_kernel_ap_uint_10_5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rb_kernel_ap_uint_10_5_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.193 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'g_kernel_ap_uint_10_5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'g_kernel_ap_uint_10_5_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.195 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rgb_bgr_kernel_ap_uint_10_5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rgb_bgr_kernel_ap_uint_10_5_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.196 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rgr_bgb_kernel_ap_uint_10_5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rgr_bgb_kernel_ap_uint_10_5_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.197 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Col_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Col_Loop' pipeline 'Col_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_42_10_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'demosaicing_3_13_17_1080_1920_1_false_Pipeline_Col_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 1.200 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'demosaicing_3_13_17_1080_1920_1_false_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_42_10_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'demosaicing_3_13_17_1080_1920_1_false_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.6 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.62 seconds; current allocated memory: 1.205 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fifo_copy_17_17_1080_1920_1_Pipeline_Col_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fifo_copy_17_17_1080_1920_1_Pipeline_Col_Loop' pipeline 'Col_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fifo_copy_17_17_1080_1920_1_Pipeline_Col_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.63 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.64 seconds; current allocated memory: 1.207 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fifo_copy_17_17_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fifo_copy_17_17_1080_1920_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.208 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_INITIALIZE_HIST' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_INITIALIZE_HIST'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.208 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBhistogramkernel_Pipeline_HIST_INITIALIZE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBhistogramkernel_Pipeline_HIST_INITIALIZE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.209 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_COL_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_COL_LOOP' pipeline 'COL_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_COL_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_MERGE_HIST_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_MERGE_HIST_LOOP' pipeline 'MERGE_HIST_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_Pipeline_MERGE_HIST_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.32 seconds; current allocated memory: 1.214 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s_tmp_hist1_V_1_RAM_T2P_BRAM_1R1W' to 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s_tmp_hist1_V_1_RAM_T2P_BRAM_1bkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s_tmp_hist1_V_2_RAM_T2P_BRAM_1R1W' to 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s_tmp_hist1_V_2_RAM_T2P_BRAM_1cud' due to the length limit 80
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 1.216 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBhistogram_17_17_1080_1920_1_1_1024_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBhistogram_17_17_1080_1920_1_1_1024_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 1.219 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_319_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_319_3' pipeline 'VITIS_LOOP_319_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_32_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_32_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_319_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.219 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_329_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_329_4' pipeline 'VITIS_LOOP_329_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_32_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_32_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBNormalizationkernel_Pipeline_VITIS_LOOP_329_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 1.221 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_Pipeline_Col_Loop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_Pipeline_Col_Loop1' pipeline 'Col_Loop1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_26s_18s_44_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_Pipeline_Col_Loop1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 1.224 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_22ns_21ns_43_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_40s_42ns_81_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_43ns_45ns_87_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_11ns_11ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_22ns_18s_40_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_32ns_18s_26_36_seq_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBNormalizationkernel_17_17_1080_1920_1_21_1_1024_2_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.35 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.53 seconds; current allocated memory: 1.228 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBNormalization_17_17_1080_1920_1_1_1024_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBNormalization_17_17_1080_1920_1_1_1024_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.83 seconds. CPU system time: 0 seconds. Elapsed time: 0.83 seconds; current allocated memory: 1.231 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fifo_awb_17_17_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fifo_awb_17_17_1080_1920_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.32 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.33 seconds; current allocated memory: 1.232 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'function_awb_17_17_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'function_awb_17_17_1080_1920_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.46 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 1.233 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_Pipeline_colLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_Pipeline_colLoop' pipeline 'colLoop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_29s_39_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10ns_30ns_39_2_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_10ns_23s_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_10ns_24s_34_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_10ns_26s_36_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_Pipeline_colLoop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.53 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.84 seconds; current allocated memory: 1.235 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xfccmkernel_17_1080_1920_21_1_11_11_1920_2_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.44 seconds. CPU system time: 0 seconds. Elapsed time: 0.45 seconds; current allocated memory: 1.237 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'colorcorrectionmatrix_0_17_17_1080_1920_1_2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'colorcorrectionmatrix_0_17_17_1080_1920_1_2_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.237 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xf_QuatizationDithering_Pipeline_VITIS_LOOP_110_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xf_QuatizationDithering_Pipeline_VITIS_LOOP_110_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.238 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xf_QuatizationDithering_Pipeline_LOOP_ROW_LOOP_COL' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'xf_QuatizationDithering_Pipeline_LOOP_ROW_LOOP_COL' pipeline 'LOOP_ROW_LOOP_COL' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xf_QuatizationDithering_Pipeline_LOOP_ROW_LOOP_COL'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.240 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s_offset_buffer_V_RAM_AUTO_1R1W' to 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s_offset_buffer_V_RAM_AUTO_dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s_offset_buffer_V_1_RAM_AUTO_1R1W' to 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s_offset_buffer_V_1_RAM_AUTeOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s_offset_buffer_V_2_RAM_AUTO_1R1W' to 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s_offset_buffer_V_2_RAM_AUTfYi' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_11ns_12ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.8 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.81 seconds; current allocated memory: 1.244 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'gammacorrection_9_9_1080_1920_1_Pipeline_VITIS_LOOP_55_2_VITIS_LOOP_56_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'gammacorrection_9_9_1080_1920_1_Pipeline_VITIS_LOOP_55_2_VITIS_LOOP_56_3' pipeline 'VITIS_LOOP_55_2_VITIS_LOOP_56_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'gammacorrection_9_9_1080_1920_1_Pipeline_VITIS_LOOP_55_2_VITIS_LOOP_56_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 1.245 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'gammacorrection_9_9_1080_1920_1_Pipeline_colLoop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'gammacorrection_9_9_1080_1920_1_Pipeline_colLoop' pipeline 'colLoop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'gammacorrection_9_9_1080_1920_1_Pipeline_colLoop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.246 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'gammacorrection_9_9_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'gammacorrection_9_9_1080_1920_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 1.247 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ColorMat2AXIvideo_9_1080_1920_1_Pipeline_loop_col_mat2axi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'ColorMat2AXIvideo_9_1080_1920_1_Pipeline_loop_col_mat2axi' pipeline 'loop_col_mat2axi' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ColorMat2AXIvideo_9_1080_1920_1_Pipeline_loop_col_mat2axi'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.248 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ColorMat2AXIvideo_9_1080_1920_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ColorMat2AXIvideo_9_1080_1920_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.249 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ISPpipeline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'fifo_w30_d2_S' is changed to 'fifo_w30_d2_S_x' due to conflict.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ISPpipeline'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1.252 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ISPPipeline_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/width' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/height' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/rgain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/bgain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/gamma_lut' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/mode_reg' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ISPPipeline_accel/pawb' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'ISPPipeline_accel' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'flag' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'width', 'height', 'mode_reg', 'rgain', 'bgain', 'pawb', 'gamma_lut' and 'return' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ISPPipeline_accel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.8 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.82 seconds; current allocated memory: 1.255 GB.
+INFO: [RTMG 210-278] Implementing memory 'ISPPipeline_accel_demosaicing_3_13_17_1080_1920_1_false_s_linebuffer_V_RAM_T2P_BRAM_1R1W_ram (RAM_T2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'ISPPipeline_accel_AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s_tmp_hist_V_RAM_T2P_BRAM_1R1W_ram (RAM_T2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'impop_data_U(ISPPipeline_accel_fifo_w30_d2_S)' using Shift Registers.
+INFO: [RTMG 210-278] Implementing memory 'ISPPipeline_accel_xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s_offset_buffer_V_RAM_AUTO_dEe_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'ISPPipeline_accel_gammacorrection_9_9_1080_1920_1_s_lut_p_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'rgain_c_U(ISPPipeline_accel_fifo_w16_d5_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bgain_c_U(ISPPipeline_accel_fifo_w16_d5_S)' using Shift Registers.

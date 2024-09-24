@@ -1,0 +1,280 @@
+
+
+================================================================
+== Vitis HLS Report for 'AWBhistogramkernel_17_17_1080_1920_1_21_1_1024_s'
+================================================================
+* Date:           Wed Sep  4 19:39:06 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        isppipeline.prj
+* Solution:       sol1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.30 ns|  2.409 ns|     0.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+---------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |  min |   max   |   Type  |
+    +---------+---------+----------+----------+------+---------+---------+
+    |     2059|  1047497|  6.795 us|  3.457 ms|  2059|  1047497|       no|
+    +---------+---------+----------+----------+------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |            |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |  Loop Name |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- ROW_LOOP  |        2|  1045440|   2 ~ 968|          -|          -|  1 ~ 1080|        no|
+        +------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 6 4 5 
+4 --> 5 
+5 --> 3 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.42>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%row = alloca i32 1"   --->   Operation 8 'alloca' 'row' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%tmp_3_loc = alloca i64 1"   --->   Operation 9 'alloca' 'tmp_3_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp1_3_loc = alloca i64 1"   --->   Operation 10 'alloca' 'tmp1_3_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_acc_loc = alloca i64 1"   --->   Operation 11 'alloca' 'tmp_acc_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_acc1_loc = alloca i64 1"   --->   Operation 12 'alloca' 'tmp_acc1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_4_loc = alloca i64 1"   --->   Operation 13 'alloca' 'tmp_4_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp1_4_loc = alloca i64 1"   --->   Operation 14 'alloca' 'tmp1_4_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_acc_2_loc = alloca i64 1"   --->   Operation 15 'alloca' 'tmp_acc_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_acc1_2_loc = alloca i64 1"   --->   Operation 16 'alloca' 'tmp_acc1_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_5_loc = alloca i64 1"   --->   Operation 17 'alloca' 'tmp_5_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp1_5_loc = alloca i64 1"   --->   Operation 18 'alloca' 'tmp1_5_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_acc_4_loc = alloca i64 1"   --->   Operation 19 'alloca' 'tmp_acc_4_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_acc1_4_loc = alloca i64 1"   --->   Operation 20 'alloca' 'tmp_acc1_4_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_hist_V = alloca i64 1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:460]   --->   Operation 21 'alloca' 'tmp_hist_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_hist_V_1 = alloca i64 1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:460]   --->   Operation 22 'alloca' 'tmp_hist_V_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_hist_V_2 = alloca i64 1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:460]   --->   Operation 23 'alloca' 'tmp_hist_V_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_hist1_V = alloca i64 1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:461]   --->   Operation 24 'alloca' 'tmp_hist1_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_hist1_V_1 = alloca i64 1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:461]   --->   Operation 25 'alloca' 'tmp_hist1_V_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_hist1_V_2 = alloca i64 1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:461]   --->   Operation 26 'alloca' 'tmp_hist1_V_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln0 = call void @AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_INITIALIZE_HIST, i32 %hist_2, i32 %hist_1, i32 %hist_0"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln0 = call void @AWBhistogramkernel_Pipeline_HIST_INITIALIZE_LOOP, i32 %tmp_hist1_V_2, i32 %tmp_hist1_V_1, i32 %tmp_hist1_V, i32 %tmp_hist_V_2, i32 %tmp_hist_V_1, i32 %tmp_hist_V"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 29 [1/1] (0.42ns)   --->   "%store_ln509 = store i11 0, i11 %row" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 29 'store' 'store_ln509' <Predicate = true> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 0.94>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%p_read_30 = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %p_read1"   --->   Operation 30 'read' 'p_read_30' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%p_read220 = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %p_read"   --->   Operation 31 'read' 'p_read220' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%p_read1_cast = zext i11 %p_read_30"   --->   Operation 32 'zext' 'p_read1_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %demosaic_out_data241, void @empty_36, i32 0, i32 0, void @empty_18, i32 0, i32 0, void @empty_18, void @empty_18, void @empty_18, i32 0, i32 0, i32 0, i32 0, void @empty_18, void @empty_18, i32 4294967295, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %impop_data1, void @empty_36, i32 0, i32 0, void @empty_18, i32 0, i32 0, void @empty_18, void @empty_18, void @empty_18, i32 0, i32 0, i32 0, i32 0, void @empty_18, void @empty_18, i32 4294967295, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln0 = call void @AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_INITIALIZE_HIST, i32 %hist_2, i32 %hist_1, i32 %hist_0"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%specmemcore_ln463 = specmemcore void @_ssdm_op_SpecMemCore, i32 %tmp_hist_V_2, i64 666, i64 30, i64 18446744073709551615" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:463]   --->   Operation 36 'specmemcore' 'specmemcore_ln463' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%specmemcore_ln463 = specmemcore void @_ssdm_op_SpecMemCore, i32 %tmp_hist_V_1, i64 666, i64 30, i64 18446744073709551615" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:463]   --->   Operation 37 'specmemcore' 'specmemcore_ln463' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%specmemcore_ln463 = specmemcore void @_ssdm_op_SpecMemCore, i32 %tmp_hist_V, i64 666, i64 30, i64 18446744073709551615" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:463]   --->   Operation 38 'specmemcore' 'specmemcore_ln463' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%specmemcore_ln464 = specmemcore void @_ssdm_op_SpecMemCore, i32 %tmp_hist1_V_2, i64 666, i64 30, i64 18446744073709551615" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:464]   --->   Operation 39 'specmemcore' 'specmemcore_ln464' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%specmemcore_ln464 = specmemcore void @_ssdm_op_SpecMemCore, i32 %tmp_hist1_V_1, i64 666, i64 30, i64 18446744073709551615" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:464]   --->   Operation 40 'specmemcore' 'specmemcore_ln464' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%specmemcore_ln464 = specmemcore void @_ssdm_op_SpecMemCore, i32 %tmp_hist1_V, i64 666, i64 30, i64 18446744073709551615" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:464]   --->   Operation 41 'specmemcore' 'specmemcore_ln464' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/2] (0.00ns)   --->   "%call_ln0 = call void @AWBhistogramkernel_Pipeline_HIST_INITIALIZE_LOOP, i32 %tmp_hist1_V_2, i32 %tmp_hist1_V_1, i32 %tmp_hist1_V, i32 %tmp_hist_V_2, i32 %tmp_hist_V_1, i32 %tmp_hist_V"   --->   Operation 42 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 43 [1/1] (0.94ns)   --->   "%cmp6214 = icmp_eq  i11 %p_read_30, i11 0"   --->   Operation 43 'icmp' 'cmp6214' <Predicate = true> <Delay = 0.94> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln509 = br void %COL_LOOP" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 44 'br' 'br_ln509' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.36>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%row_1 = load i11 %row" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 45 'load' 'row_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.94ns)   --->   "%icmp_ln509 = icmp_eq  i11 %row_1, i11 %p_read220" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 46 'icmp' 'icmp_ln509' <Predicate = true> <Delay = 0.94> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 47 [1/1] (0.79ns)   --->   "%row_2 = add i11 %row_1, i11 1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 47 'add' 'row_2' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln509 = br i1 %icmp_ln509, void %COL_LOOP.split, void %for.inc181.loopexit" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 48 'br' 'br_ln509' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%speclooptripcount_ln512 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 1080, i64 540" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:512]   --->   Operation 49 'speclooptripcount' 'speclooptripcount_ln512' <Predicate = (!icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%specloopname_ln509 = specloopname void @_ssdm_op_SpecLoopName, void @empty_28" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 50 'specloopname' 'specloopname_ln509' <Predicate = (!icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%br_ln515 = br i1 %cmp6214, void %for.body64.lr.ph, void %for.inc154" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:515]   --->   Operation 51 'br' 'br_ln515' <Predicate = (!icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_36 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:560]   --->   Operation 52 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_36' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_37 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:561]   --->   Operation 53 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_37' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_38 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:562]   --->   Operation 54 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_38' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_39 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563]   --->   Operation 55 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_39' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_40 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:560]   --->   Operation 56 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_40' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_41 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:561]   --->   Operation 57 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_41' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_42 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:562]   --->   Operation 58 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_42' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_43 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563]   --->   Operation 59 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_43' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_44 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:560]   --->   Operation 60 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_44' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_45 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:561]   --->   Operation 61 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_45' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_46 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:562]   --->   Operation 62 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_46' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_47 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563]   --->   Operation 63 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_47' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 64 [1/1] (0.79ns)   --->   "%add_ln515 = add i12 %p_read1_cast, i12 1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:515]   --->   Operation 64 'add' 'add_ln515' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%tmp_53 = partselect i11 @_ssdm_op_PartSelect.i11.i12.i32.i32, i12 %add_ln515, i32 1, i32 11" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:515]   --->   Operation 65 'partselect' 'tmp_53' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%tmp_54 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i11.i1, i11 %tmp_53, i1 0" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:515]   --->   Operation 66 'bitconcatenate' 'tmp_54' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 67 'wait' 'empty' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 0.00>
+ST_3 : Operation 68 [2/2] (1.41ns)   --->   "%call_ln563 = call void @AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_COL_LOOP, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_47, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_46, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_45, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_44, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_43, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_42, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_41, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_40, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_39, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_38, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_37, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_36, i12 %tmp_54, i30 %demosaic_out_data241, i30 %impop_data1, i32 %tmp_hist_V, i32 %tmp_hist1_V, i32 %tmp_hist_V_1, i32 %tmp_hist1_V_1, i32 %tmp_hist_V_2, i32 %tmp_hist1_V_2, i32 %tmp_acc1_4_loc, i32 %tmp_acc_4_loc, i32 %tmp1_5_loc, i32 %tmp_5_loc, i32 %tmp_acc1_2_loc, i32 %tmp_acc_2_loc, i32 %tmp1_4_loc, i32 %tmp_4_loc, i32 %tmp_acc1_loc, i32 %tmp_acc_loc, i32 %tmp1_3_loc, i32 %tmp_3_loc" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563]   --->   Operation 68 'call' 'call_ln563' <Predicate = (!icmp_ln509 & !cmp6214)> <Delay = 1.41> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%tmp = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:573]   --->   Operation 69 'load' 'tmp' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%tmp1 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:574]   --->   Operation 70 'load' 'tmp1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_48 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 71 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_48' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%zext_ln575 = zext i32 %tmp" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 72 'zext' 'zext_ln575' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%tmp_hist_V_addr_1 = getelementptr i32 %tmp_hist_V, i64 0, i64 %zext_ln575" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 73 'getelementptr' 'tmp_hist_V_addr_1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (1.23ns)   --->   "%store_ln575 = store i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_48, i10 %tmp_hist_V_addr_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 74 'store' 'store_ln575' <Predicate = (icmp_ln509)> <Delay = 1.23> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_49 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 75 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_49' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.00ns)   --->   "%zext_ln576 = zext i32 %tmp1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 76 'zext' 'zext_ln576' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_hist1_V_addr_1 = getelementptr i32 %tmp_hist1_V, i64 0, i64 %zext_ln576" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 77 'getelementptr' 'tmp_hist1_V_addr_1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 78 [1/1] (1.23ns)   --->   "%store_ln576 = store i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_49, i10 %tmp_hist1_V_addr_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 78 'store' 'store_ln576' <Predicate = (icmp_ln509)> <Delay = 1.23> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_51 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:573]   --->   Operation 79 'load' 'tmp_51' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%tmp1_3 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:574]   --->   Operation 80 'load' 'tmp1_3' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_50 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 81 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_50' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%zext_ln575_1 = zext i32 %tmp_51" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 82 'zext' 'zext_ln575_1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_hist_V_1_addr_1 = getelementptr i32 %tmp_hist_V_1, i64 0, i64 %zext_ln575_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 83 'getelementptr' 'tmp_hist_V_1_addr_1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 84 [1/1] (1.23ns)   --->   "%store_ln575 = store i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_50, i10 %tmp_hist_V_1_addr_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 84 'store' 'store_ln575' <Predicate = (icmp_ln509)> <Delay = 1.23> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_51 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 85 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_51' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%zext_ln576_1 = zext i32 %tmp1_3" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 86 'zext' 'zext_ln576_1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_hist1_V_1_addr_1 = getelementptr i32 %tmp_hist1_V_1, i64 0, i64 %zext_ln576_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 87 'getelementptr' 'tmp_hist1_V_1_addr_1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (1.23ns)   --->   "%store_ln576 = store i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_51, i10 %tmp_hist1_V_1_addr_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 88 'store' 'store_ln576' <Predicate = (icmp_ln509)> <Delay = 1.23> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_52 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:573]   --->   Operation 89 'load' 'tmp_52' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%tmp1_4 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:574]   --->   Operation 90 'load' 'tmp1_4' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_52 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 91 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_52' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln575_2 = zext i32 %tmp_52" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 92 'zext' 'zext_ln575_2' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_hist_V_2_addr_1 = getelementptr i32 %tmp_hist_V_2, i64 0, i64 %zext_ln575_2" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 93 'getelementptr' 'tmp_hist_V_2_addr_1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 94 [1/1] (1.23ns)   --->   "%store_ln575 = store i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_52, i10 %tmp_hist_V_2_addr_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:575]   --->   Operation 94 'store' 'store_ln575' <Predicate = (icmp_ln509)> <Delay = 1.23> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 95 [1/1] (0.00ns)   --->   "%void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_53 = load i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 95 'load' 'void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_53' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln576_2 = zext i32 %tmp1_4" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 96 'zext' 'zext_ln576_2' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%tmp_hist1_V_2_addr_1 = getelementptr i32 %tmp_hist1_V_2, i64 0, i64 %zext_ln576_2" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 97 'getelementptr' 'tmp_hist1_V_2_addr_1' <Predicate = (icmp_ln509)> <Delay = 0.00>
+ST_3 : Operation 98 [1/1] (1.23ns)   --->   "%store_ln576 = store i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_53, i10 %tmp_hist1_V_2_addr_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:576]   --->   Operation 98 'store' 'store_ln576' <Predicate = (icmp_ln509)> <Delay = 1.23> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 99 [1/2] (0.00ns)   --->   "%call_ln563 = call void @AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_COL_LOOP, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_47, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_46, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_45, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_44, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_43, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_42, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_41, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_40, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_39, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_38, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_37, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_36, i12 %tmp_54, i30 %demosaic_out_data241, i30 %impop_data1, i32 %tmp_hist_V, i32 %tmp_hist1_V, i32 %tmp_hist_V_1, i32 %tmp_hist1_V_1, i32 %tmp_hist_V_2, i32 %tmp_hist1_V_2, i32 %tmp_acc1_4_loc, i32 %tmp_acc_4_loc, i32 %tmp1_5_loc, i32 %tmp_5_loc, i32 %tmp_acc1_2_loc, i32 %tmp_acc_2_loc, i32 %tmp1_4_loc, i32 %tmp_4_loc, i32 %tmp_acc1_loc, i32 %tmp_acc_loc, i32 %tmp1_3_loc, i32 %tmp_3_loc" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563]   --->   Operation 99 'call' 'call_ln563' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.42>
+ST_5 : Operation 100 [1/1] (0.00ns)   --->   "%tmp_acc1_4_loc_load = load i32 %tmp_acc1_4_loc"   --->   Operation 100 'load' 'tmp_acc1_4_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 101 [1/1] (0.00ns)   --->   "%tmp_acc_4_loc_load = load i32 %tmp_acc_4_loc"   --->   Operation 101 'load' 'tmp_acc_4_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 102 [1/1] (0.00ns)   --->   "%tmp1_5_loc_load = load i32 %tmp1_5_loc"   --->   Operation 102 'load' 'tmp1_5_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 103 [1/1] (0.00ns)   --->   "%tmp_5_loc_load = load i32 %tmp_5_loc"   --->   Operation 103 'load' 'tmp_5_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_acc1_2_loc_load = load i32 %tmp_acc1_2_loc"   --->   Operation 104 'load' 'tmp_acc1_2_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 105 [1/1] (0.00ns)   --->   "%tmp_acc_2_loc_load = load i32 %tmp_acc_2_loc"   --->   Operation 105 'load' 'tmp_acc_2_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 106 [1/1] (0.00ns)   --->   "%tmp1_4_loc_load = load i32 %tmp1_4_loc"   --->   Operation 106 'load' 'tmp1_4_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_4_loc_load = load i32 %tmp_4_loc"   --->   Operation 107 'load' 'tmp_4_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 108 [1/1] (0.00ns)   --->   "%tmp_acc1_loc_load = load i32 %tmp_acc1_loc"   --->   Operation 108 'load' 'tmp_acc1_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 109 [1/1] (0.00ns)   --->   "%tmp_acc_loc_load = load i32 %tmp_acc_loc"   --->   Operation 109 'load' 'tmp_acc_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 110 [1/1] (0.00ns)   --->   "%tmp1_3_loc_load = load i32 %tmp1_3_loc"   --->   Operation 110 'load' 'tmp1_3_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 111 [1/1] (0.00ns)   --->   "%tmp_3_loc_load = load i32 %tmp_3_loc"   --->   Operation 111 'load' 'tmp_3_loc_load' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 112 [1/1] (0.00ns)   --->   "%store_ln560 = store i32 %tmp_3_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_5" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:560]   --->   Operation 112 'store' 'store_ln560' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 113 [1/1] (0.00ns)   --->   "%store_ln561 = store i32 %tmp1_3_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_2" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:561]   --->   Operation 113 'store' 'store_ln561' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 114 [1/1] (0.00ns)   --->   "%store_ln562 = store i32 %tmp_acc_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_11" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:562]   --->   Operation 114 'store' 'store_ln562' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 115 [1/1] (0.00ns)   --->   "%store_ln563 = store i32 %tmp_acc1_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_8" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563]   --->   Operation 115 'store' 'store_ln563' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 116 [1/1] (0.00ns)   --->   "%store_ln560 = store i32 %tmp_4_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_4" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:560]   --->   Operation 116 'store' 'store_ln560' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 117 [1/1] (0.00ns)   --->   "%store_ln561 = store i32 %tmp1_4_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_1" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:561]   --->   Operation 117 'store' 'store_ln561' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 118 [1/1] (0.00ns)   --->   "%store_ln562 = store i32 %tmp_acc_2_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_10" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:562]   --->   Operation 118 'store' 'store_ln562' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 119 [1/1] (0.00ns)   --->   "%store_ln563 = store i32 %tmp_acc1_2_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_7" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563]   --->   Operation 119 'store' 'store_ln563' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 120 [1/1] (0.00ns)   --->   "%store_ln560 = store i32 %tmp_5_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_3" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:560]   --->   Operation 120 'store' 'store_ln560' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 121 [1/1] (0.00ns)   --->   "%store_ln561 = store i32 %tmp1_5_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:561]   --->   Operation 121 'store' 'store_ln561' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 122 [1/1] (0.00ns)   --->   "%store_ln562 = store i32 %tmp_acc_4_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_9" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:562]   --->   Operation 122 'store' 'store_ln562' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%store_ln563 = store i32 %tmp_acc1_4_loc_load, i32 %void_AWBhistogramkernel_Mat_Mat_unsigned_int_1024_float_float_float_float_6" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563]   --->   Operation 123 'store' 'store_ln563' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 124 [1/1] (0.00ns)   --->   "%br_ln509 = br void %for.inc154" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 124 'br' 'br_ln509' <Predicate = (!cmp6214)> <Delay = 0.00>
+ST_5 : Operation 125 [1/1] (0.42ns)   --->   "%store_ln509 = store i11 %row_2, i11 %row" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 125 'store' 'store_ln509' <Predicate = true> <Delay = 0.42>
+ST_5 : Operation 126 [1/1] (0.00ns)   --->   "%br_ln509 = br void %COL_LOOP" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509]   --->   Operation 126 'br' 'br_ln509' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 3> <Delay = 0.00>
+ST_6 : Operation 127 [2/2] (0.00ns)   --->   "%call_ln0 = call void @AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_MERGE_HIST_LOOP, i32 %hist_2, i32 %hist_1, i32 %hist_0, i32 %tmp_hist_V, i32 %tmp_hist1_V, i32 %tmp_hist_V_1, i32 %tmp_hist1_V_1, i32 %tmp_hist_V_2, i32 %tmp_hist1_V_2"   --->   Operation 127 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 4> <Delay = 0.00>
+ST_7 : Operation 128 [1/2] (0.00ns)   --->   "%call_ln0 = call void @AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_MERGE_HIST_LOOP, i32 %hist_2, i32 %hist_1, i32 %hist_0, i32 %tmp_hist_V, i32 %tmp_hist1_V, i32 %tmp_hist_V_1, i32 %tmp_hist1_V_1, i32 %tmp_hist_V_2, i32 %tmp_hist1_V_2"   --->   Operation 128 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 129 [1/1] (0.00ns)   --->   "%ret_ln607 = ret" [../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:607]   --->   Operation 129 'ret' 'ret_ln607' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.3ns, clock uncertainty: 0.891ns.
+
+ <State 1>: 0.427ns
+The critical path consists of the following:
+	'alloca' operation ('row') [20]  (0 ns)
+	'store' operation ('store_ln509', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509) of constant 0 on local variable 'row' [53]  (0.427 ns)
+
+ <State 2>: 0.944ns
+The critical path consists of the following:
+	wire read operation ('p_read_30') on port 'p_read1' [21]  (0 ns)
+	'icmp' operation ('cmp6214') [52]  (0.944 ns)
+
+ <State 3>: 2.36ns
+The critical path consists of the following:
+	'add' operation ('add_ln515', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:515) [77]  (0.798 ns)
+	'call' operation ('call_ln563', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:563) to 'AWBhistogramkernel<17, 17, 1080, 1920, 1, 21, 1, 1024>_Pipeline_COL_LOOP' [81]  (1.42 ns)
+	blocking operation 0.146 ns on control path)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0.427ns
+The critical path consists of the following:
+	'store' operation ('store_ln509', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509) of variable 'row', ../../../../../overlays/Vitis_Libraries/vision//L1/include/imgproc/xf_autowhitebalance.hpp:509 on local variable 'row' [108]  (0.427 ns)
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,56 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'ISPpipeline'" level="0">
+<item name = "Date">Wed Sep  4 19:39:15 2024
+</item>
+<item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
+<item name = "Project">isppipeline.prj</item>
+<item name = "Solution">sol1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.30 ns, 3.239 ns, 0.89 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2084559, 2097981, 6.879 ms, 6.923 ms, 2084403, 2097967, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ln0_entry_proc_fu_266">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_ISPpipeline_Block_entry1_proc_fu_276">ISPpipeline_Block_entry1_proc, 14, 14, 46.200 ns, 46.200 ns, 14, 14, no</column>
+<column name="grp_AXIVideo2BayerMat_13_1080_1920_1_s_fu_286">AXIVideo2BayerMat_13_1080_1920_1_s, 6, 2084406, 19.800 ns, 6.879 ms, 6, 2084406, no</column>
+<column name="grp_blackLevelCorrection_13_1080_1920_1_16_15_1_9_fu_309">blackLevelCorrection_13_1080_1920_1_16_15_1_9, 2073612, 2073612, 6.843 ms, 6.843 ms, 2073612, 2073612, no</column>
+<column name="grp_gaincontrol_3_13_1080_1920_1_s_fu_317">gaincontrol_3_13_1080_1920_1_s, 2082241, 2082241, 6.871 ms, 6.871 ms, 2082241, 2082241, no</column>
+<column name="grp_demosaicing_3_13_17_1080_1920_1_false_s_fu_327">demosaicing_3_13_17_1080_1920_1_false_s, 14646, 2097966, 48.332 us, 6.923 ms, 14646, 2097966, no</column>
+<column name="grp_function_awb_17_17_1080_1920_1_s_fu_335">function_awb_17_17_1080_1920_1_s, 2077923, 2089150, 6.857 ms, 6.894 ms, 2077923, 2089150, no</column>
+<column name="grp_colorcorrectionmatrix_0_17_17_1080_1920_1_2_s_fu_388">colorcorrectionmatrix_0_17_17_1080_1920_1_2_s, 2084402, 2084402, 6.879 ms, 6.879 ms, 2084402, 2084402, no</column>
+<column name="grp_xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s_fu_396">xf_QuatizationDithering_17_9_1080_1920_256_1024_1_s, 2075532, 2075532, 6.849 ms, 6.849 ms, 2075532, 2075532, no</column>
+<column name="grp_gammacorrection_9_9_1080_1920_1_s_fu_404">gammacorrection_9_9_1080_1920_1_s, 2081934, 2081934, 6.870 ms, 6.870 ms, 2081934, 2081934, no</column>
+<column name="grp_ColorMat2AXIvideo_9_1080_1920_1_s_fu_414">ColorMat2AXIvideo_9_1080_1920_1_s, 1, 2079001, 3.300 ns, 6.861 ms, 1, 2079001, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -e  # Exit immediately if a command exits with a non-zero status
+set -o pipefail  # Exit if any command in a pipeline fails
+set -x  # Print commands and their arguments as they are executed
+
 # Start with a clean git repo
 git clean -xfd
 

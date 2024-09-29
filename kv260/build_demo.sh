@@ -6,6 +6,7 @@ set -x  # Print commands and their arguments as they are executed
 
 # Start with a clean git repo
 git clean -xfd
+make clean
 
 # Make the platform
 make platform PFM=kv260_ispMipiRx_vcu_DP
@@ -16,7 +17,7 @@ make ip
 popd
 
 # Copy the single_isp IP over
-cp -rf platforms/vivado/kv260_ispMipiRx_rpiMipiRx_DP/ip/isp_single_kv260/ platforms/vivado/kv260_ispMipiRx_vcu_DP/ip/
+cp -rf platforms/vivado/kv260_ispMipiRx_rpiMipiRx_DP/ip/isp_single_kv260/* platforms/vivado/kv260_ispMipiRx_vcu_DP/ip/
 
 # Copy the demo extras over
 cp extras/pin.xdc platforms/vivado/kv260_ispMipiRx_vcu_DP/xdc/pin.xdc

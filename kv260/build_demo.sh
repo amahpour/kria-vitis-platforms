@@ -5,6 +5,7 @@ set -o pipefail  # Exit if any command in a pipeline fails
 set -x  # Print commands and their arguments as they are executed
 
 # Start with a clean git repo
+git reset --hard
 git clean -xfd
 make clean
 
